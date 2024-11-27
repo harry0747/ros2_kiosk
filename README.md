@@ -60,11 +60,13 @@
 
 ```bash
     ros2 run kiosk kiosk
+```
 
 4. 제대로 퍼블리시가 되는지 확인하고 싶으면 아래 명령어 입력
   
-
+```bash
     ros2 topic echo /kiosk_order
+```
 
 ---
 
@@ -73,14 +75,15 @@
 
 #### 실행 명령어 
 
-
+```bash
     ros2 run kiosk receive
-
+```
 
 퍼블리시 되는 것을 확인하고 싶으면
 
-
+```bash
     ros2 topic echo /receive_status
+```
     
     
     
