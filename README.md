@@ -52,17 +52,17 @@
 #### 프로젝트 실행
 1. 워크스페이스를 빌드합니다:
    
-bash
-   colcon build
+```bash
+    colcon build
    
 2. 환경설정을 불러온후, kiosk 실행
-   bash
-   ros2 run kiosk kiosk
+```bash
+    ros2 run kiosk kiosk
 
 3. 제대로 퍼블리시가 되는지 확인하고 싶으면 아래 명령어 입력
   
-   bash
-  ros2 topic echo /kiosk_order
+```bash
+    ros2 topic echo /kiosk_order
 
 ---
 
@@ -70,12 +70,12 @@ bash
 
 #### 실행 명령어 
 
-    bash
+```bash
     ros2 run kiosk receive
 
 퍼블리시 되는 것을 확인하고 싶으면
 
-    bash
+```bash
     ros2 topic echo /receive_status
     
     
