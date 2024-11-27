@@ -53,7 +53,8 @@
 1. 워크스페이스를 빌드합니다:
 
 ```bash
-    colcon build```
+    colcon build
+```
    
 3. 환경설정을 불러온후, kiosk 실행
 
