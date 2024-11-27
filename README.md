@@ -1,7 +1,8 @@
 # ROS2 Kiosk
 
 ## 프로젝트: ROS2 기반 키오스크 주문 시스템
-
+/home/harry/aaa/src/kiosk/kiosk/kiosk.py -> 키오스크로 사용될 노드
+/home/harry/aaa/src/kiosk/kiosk/receive.py -> 자율주행로봇에 붙어서 수령확인할 노드
 ---
 
 ### 목적
@@ -36,7 +37,8 @@
 #### ServingWindow
 -Takeout 또는 Eat Here 버튼을 선택해 테이블 번호 입력.
 -테이블 번호와 함께 다음 단계로 이동.
--FlavorWindow
+
+#### FlavorWindow
 -아이스크림 맛과 수량을 선택.
 -Next 버튼을 누르면 ROS2 퍼블리시 시작.
 -InfoWindow로 이동.
