@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_custom_interface/action/COME.action
+// generated code does not contain a copyright notice
+
+
+module my_custom_interface {
+  module action {
+    struct COME_Goal {
+      string command;
+
+      int8 table_number;
+    };
+    struct COME_Result {
+      string arrive;
+    };
+    struct COME_Feedback {
+      string check;
+    };
+  };
+};

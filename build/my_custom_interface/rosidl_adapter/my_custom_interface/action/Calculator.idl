@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_custom_interface/action/Calculator.action
+// generated code does not contain a copyright notice
+
+
+module my_custom_interface {
+  module action {
+    struct Calculator_Goal {
+      int8 num_a;
+
+      int8 num_b;
+
+      string op;
+    };
+    struct Calculator_Result {
+      int64 answer;
+    };
+    struct Calculator_Feedback {
+      int8 loading_count;
+    };
+  };
+};

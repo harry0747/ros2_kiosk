@@ -1,0 +1,766 @@
+[0.000000] (-) TimerEvent: {}
+[0.000772] (my_custom_interface) JobQueued: {'identifier': 'my_custom_interface', 'dependencies': OrderedDict()}
+[0.000804] (term_project) JobQueued: {'identifier': 'term_project', 'dependencies': OrderedDict([('my_custom_interface', '/home/harry/aaa/install/my_custom_interface')])}
+[0.000823] (my_custom_interface) JobStarted: {'identifier': 'my_custom_interface'}
+[0.010296] (my_custom_interface) JobProgress: {'identifier': 'my_custom_interface', 'progress': 'cmake'}
+[0.010768] (my_custom_interface) Command: {'cmd': ['/home/harry/.local/bin/cmake', '/home/harry/aaa/src/my_custom_interface', '-DCMAKE_INSTALL_PREFIX=/home/harry/aaa/install/my_custom_interface'], 'cwd': '/home/harry/aaa/build/my_custom_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'harry'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/harry/a/install/my_custom_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/harry'), ('OLDPWD', '/home/harry'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1395'), ('SYSTEMD_EXEC_PID', '1739'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '348770'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/harry/a/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'harry'), ('JOURNAL_STREAM', '8:18532'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'harry'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/harry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/harry:@/tmp/.ICE-unix/1545,unix/harry:/tmp/.ICE-unix/1545'), ('INVOCATION_ID', '00561f14d8b74fc1a80d7ccad8f3ad69'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ULBOX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/harry/a/install/term_project:/home/harry/a/install/my_custom_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:db44d02c-f497-4ae4-811e-567c6086af9c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('WEBOTS_HOME', '/mnt/c/Program Files/Webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/harry/aaa/build/my_custom_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/harry/a/install/term_project/lib/python3.10/site-packages:/home/harry/a/install/my_custom_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/harry/a/install/my_custom_interface:/home/harry/a/install/term_project:/opt/ros/humble')]), 'shell': False}
+[0.100033] (-) TimerEvent: {}
+[0.101494] (my_custom_interface) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.101614] (my_custom_interface) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.101670] (my_custom_interface) StderrLine: {'line': b'  CMake.\n'}
+[0.101719] (my_custom_interface) StderrLine: {'line': b'\n'}
+[0.101766] (my_custom_interface) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.101813] (my_custom_interface) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.101858] (my_custom_interface) StderrLine: {'line': b'\n'}
+[0.101930] (my_custom_interface) StderrLine: {'line': b'\x1b[0m\n'}
+[0.200155] (-) TimerEvent: {}
+[0.239691] (my_custom_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300258] (-) TimerEvent: {}
+[0.355906] (my_custom_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.367167] (my_custom_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400414] (-) TimerEvent: {}
+[0.430071] (my_custom_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.445867] (my_custom_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.446426] (my_custom_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.447004] (my_custom_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.458500] (my_custom_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500507] (-) TimerEvent: {}
+[0.523474] (my_custom_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.539791] (my_custom_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.540159] (my_custom_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.540919] (my_custom_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.556044] (my_custom_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600620] (-) TimerEvent: {}
+[0.679129] (my_custom_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter\n'}
+[0.700728] (-) TimerEvent: {}
+[0.774991] (my_custom_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.779659] (my_custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.789352] (my_custom_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.800853] (-) TimerEvent: {}
+[0.857801] (my_custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.900978] (-) TimerEvent: {}
+[0.907068] (my_custom_interface) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.950536] (my_custom_interface) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.001108] (-) TimerEvent: {}
+[1.101373] (-) TimerEvent: {}
+[1.201676] (-) TimerEvent: {}
+[1.301923] (-) TimerEvent: {}
+[1.402212] (-) TimerEvent: {}
+[1.502469] (-) TimerEvent: {}
+[1.572365] (my_custom_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.602595] (-) TimerEvent: {}
+[1.702850] (-) TimerEvent: {}
+[1.803136] (-) TimerEvent: {}
+[1.903424] (-) TimerEvent: {}
+[2.003683] (-) TimerEvent: {}
+[2.103929] (-) TimerEvent: {}
+[2.128718] (my_custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.204039] (-) TimerEvent: {}
+[2.304291] (-) TimerEvent: {}
+[2.404539] (-) TimerEvent: {}
+[2.504767] (-) TimerEvent: {}
+[2.605062] (-) TimerEvent: {}
+[2.705334] (-) TimerEvent: {}
+[2.805596] (-) TimerEvent: {}
+[2.820028] (my_custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.823214] (my_custom_interface) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):\n'}
+[2.823341] (my_custom_interface) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.823454] (my_custom_interface) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.823541] (my_custom_interface) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.823632] (my_custom_interface) StderrLine: {'line': b'\n'}
+[2.823722] (my_custom_interface) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.823809] (my_custom_interface) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.823896] (my_custom_interface) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.824007] (my_custom_interface) StderrLine: {'line': b'  CMakeLists.txt:34 (rosidl_generate_interfaces)\n'}
+[2.824123] (my_custom_interface) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.824236] (my_custom_interface) StderrLine: {'line': b'\x1b[0m\n'}
+[2.843749] (my_custom_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")\n'}
+[2.846337] (my_custom_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.847245] (my_custom_interface) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):\n'}
+[2.847340] (my_custom_interface) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.847428] (my_custom_interface) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.847493] (my_custom_interface) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.847541] (my_custom_interface) StderrLine: {'line': b'\n'}
+[2.847589] (my_custom_interface) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.847637] (my_custom_interface) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[2.847684] (my_custom_interface) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.847735] (my_custom_interface) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.847782] (my_custom_interface) StderrLine: {'line': b'  CMakeLists.txt:34 (rosidl_generate_interfaces)\n'}
+[2.847827] (my_custom_interface) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.847873] (my_custom_interface) StderrLine: {'line': b'\x1b[0m\n'}
+[2.866521] (my_custom_interface) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):\n'}
+[2.866651] (my_custom_interface) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.866705] (my_custom_interface) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.866754] (my_custom_interface) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.866802] (my_custom_interface) StderrLine: {'line': b'\n'}
+[2.866848] (my_custom_interface) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.866894] (my_custom_interface) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[2.866940] (my_custom_interface) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.866995] (my_custom_interface) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.867041] (my_custom_interface) StderrLine: {'line': b'  CMakeLists.txt:34 (rosidl_generate_interfaces)\n'}
+[2.867085] (my_custom_interface) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.867129] (my_custom_interface) StderrLine: {'line': b'\x1b[0m\n'}
+[2.873702] (my_custom_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")\n'}
+[2.873891] (my_custom_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.873948] (my_custom_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.873999] (my_custom_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.893225] (my_custom_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so\n'}
+[2.905695] (-) TimerEvent: {}
+[2.989330] (my_custom_interface) StdoutLine: {'line': b'-- Configuring done (2.9s)\n'}
+[3.005826] (-) TimerEvent: {}
+[3.054403] (my_custom_interface) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[3.065748] (my_custom_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/harry/aaa/build/my_custom_interface\n'}
+[3.074635] (my_custom_interface) CommandEnded: {'returncode': 0}
+[3.074954] (my_custom_interface) JobProgress: {'identifier': 'my_custom_interface', 'progress': 'build'}
+[3.076296] (my_custom_interface) Command: {'cmd': ['/home/harry/.local/bin/cmake', '--build', '/home/harry/aaa/build/my_custom_interface', '--', '-j12', '-l12'], 'cwd': '/home/harry/aaa/build/my_custom_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'harry'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/harry/a/install/my_custom_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/harry'), ('OLDPWD', '/home/harry'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1395'), ('SYSTEMD_EXEC_PID', '1739'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '348770'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/harry/a/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'harry'), ('JOURNAL_STREAM', '8:18532'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'harry'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/harry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/harry:@/tmp/.ICE-unix/1545,unix/harry:/tmp/.ICE-unix/1545'), ('INVOCATION_ID', '00561f14d8b74fc1a80d7ccad8f3ad69'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ULBOX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/harry/a/install/term_project:/home/harry/a/install/my_custom_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:db44d02c-f497-4ae4-811e-567c6086af9c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('WEBOTS_HOME', '/mnt/c/Program Files/Webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/harry/aaa/build/my_custom_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/harry/a/install/term_project/lib/python3.10/site-packages:/home/harry/a/install/my_custom_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/harry/a/install/my_custom_interface:/home/harry/a/install/term_project:/opt/ros/humble')]), 'shell': False}
+[3.105941] (-) TimerEvent: {}
+[3.166628] (my_custom_interface) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.171653] (my_custom_interface) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.173229] (my_custom_interface) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_my_custom_interface\n'}
+[3.206032] (-) TimerEvent: {}
+[3.306289] (-) TimerEvent: {}
+[3.406546] (-) TimerEvent: {}
+[3.466491] (my_custom_interface) StdoutLine: {'line': b'running egg_info\n'}
+[3.466971] (my_custom_interface) StdoutLine: {'line': b'creating my_custom_interface.egg-info\n'}
+[3.467165] (my_custom_interface) StdoutLine: {'line': b'writing my_custom_interface.egg-info/PKG-INFO\n'}
+[3.467338] (my_custom_interface) StdoutLine: {'line': b'writing dependency_links to my_custom_interface.egg-info/dependency_links.txt\n'}
+[3.467512] (my_custom_interface) StdoutLine: {'line': b'writing top-level names to my_custom_interface.egg-info/top_level.txt\n'}
+[3.467764] (my_custom_interface) StdoutLine: {'line': b"writing manifest file 'my_custom_interface.egg-info/SOURCES.txt'\n"}
+[3.469983] (my_custom_interface) StdoutLine: {'line': b"reading manifest file 'my_custom_interface.egg-info/SOURCES.txt'\n"}
+[3.470597] (my_custom_interface) StdoutLine: {'line': b"writing manifest file 'my_custom_interface.egg-info/SOURCES.txt'\n"}
+[3.490328] (my_custom_interface) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_my_custom_interface_egg\n'}
+[3.506663] (-) TimerEvent: {}
+[3.606914] (-) TimerEvent: {}
+[3.707128] (-) TimerEvent: {}
+[3.807426] (-) TimerEvent: {}
+[3.907642] (-) TimerEvent: {}
+[4.007929] (-) TimerEvent: {}
+[4.108182] (-) TimerEvent: {}
+[4.208431] (-) TimerEvent: {}
+[4.308695] (-) TimerEvent: {}
+[4.408953] (-) TimerEvent: {}
+[4.487591] (my_custom_interface) StdoutLine: {'line': b'[  1%] Built target my_custom_interface__cpp\n'}
+[4.492905] (my_custom_interface) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.493116] (my_custom_interface) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.493287] (my_custom_interface) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.509076] (-) TimerEvent: {}
+[4.576877] (my_custom_interface) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/abc__functions.c.o\x1b[0m\n'}
+[4.578056] (my_custom_interface) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/rotatehome__functions.c.o\x1b[0m\n'}
+[4.578247] (my_custom_interface) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/two_string_service__functions.c.o\x1b[0m\n'}
+[4.578384] (my_custom_interface) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/drive__functions.c.o\x1b[0m\n'}
+[4.578523] (my_custom_interface) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/order__functions.c.o\x1b[0m\n'}
+[4.578663] (my_custom_interface) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/orderr__functions.c.o\x1b[0m\n'}
+[4.578851] (my_custom_interface) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/complete__functions.c.o\x1b[0m\n'}
+[4.578989] (my_custom_interface) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/action/detail/calculator__functions.c.o\x1b[0m\n'}
+[4.579885] (my_custom_interface) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/action/detail/cal__functions.c.o\x1b[0m\n'}
+[4.609171] (-) TimerEvent: {}
+[4.691500] (my_custom_interface) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/action/detail/come__functions.c.o\x1b[0m\n'}
+[4.709296] (-) TimerEvent: {}
+[4.809535] (-) TimerEvent: {}
+[4.860697] (my_custom_interface) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libmy_custom_interface__rosidl_generator_c.so\x1b[0m\n'}
+[4.899480] (my_custom_interface) StdoutLine: {'line': b'[ 15%] Built target my_custom_interface__rosidl_generator_c\n'}
+[4.905330] (my_custom_interface) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.907004] (my_custom_interface) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.907565] (my_custom_interface) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.909617] (-) TimerEvent: {}
+[5.009869] (-) TimerEvent: {}
+[5.110139] (-) TimerEvent: {}
+[5.210413] (-) TimerEvent: {}
+[5.279016] (my_custom_interface) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/abc__type_support.cpp.o\x1b[0m\n'}
+[5.279277] (my_custom_interface) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/rotatehome__type_support.cpp.o\x1b[0m\n'}
+[5.279447] (my_custom_interface) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/two_string_service__type_support.cpp.o\x1b[0m\n'}
+[5.279669] (my_custom_interface) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/complete__type_support.cpp.o\x1b[0m\n'}
+[5.279814] (my_custom_interface) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/drive__type_support.cpp.o\x1b[0m\n'}
+[5.281901] (my_custom_interface) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/order__type_support.cpp.o\x1b[0m\n'}
+[5.282281] (my_custom_interface) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/orderr__type_support.cpp.o\x1b[0m\n'}
+[5.313072] (-) TimerEvent: {}
+[5.413353] (-) TimerEvent: {}
+[5.513660] (-) TimerEvent: {}
+[5.613951] (-) TimerEvent: {}
+[5.714247] (-) TimerEvent: {}
+[5.814550] (-) TimerEvent: {}
+[5.914851] (-) TimerEvent: {}
+[5.985098] (my_custom_interface) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/action/calculator__type_support.cpp.o\x1b[0m\n'}
+[5.989471] (my_custom_interface) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/action/cal__type_support.cpp.o\x1b[0m\n'}
+[5.993041] (my_custom_interface) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/action/come__type_support.cpp.o\x1b[0m\n'}
+[6.015424] (-) TimerEvent: {}
+[6.015761] (my_custom_interface) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/abc__type_support.cpp.o\x1b[0m\n'}
+[6.015972] (my_custom_interface) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/rotatehome__type_support.cpp.o\x1b[0m\n'}
+[6.018836] (my_custom_interface) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/two_string_service__type_support.cpp.o\x1b[0m\n'}
+[6.019193] (my_custom_interface) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/complete__type_support.cpp.o\x1b[0m\n'}
+[6.043012] (my_custom_interface) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/drive__type_support.cpp.o\x1b[0m\n'}
+[6.115526] (-) TimerEvent: {}
+[6.151928] (my_custom_interface) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/abc__type_support.cpp.o\x1b[0m\n'}
+[6.218640] (-) TimerEvent: {}
+[6.222495] (my_custom_interface) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/rotatehome__type_support.cpp.o\x1b[0m\n'}
+[6.318737] (-) TimerEvent: {}
+[6.326755] (my_custom_interface) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/two_string_service__type_support.cpp.o\x1b[0m\n'}
+[6.418835] (-) TimerEvent: {}
+[6.423963] (my_custom_interface) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/complete__type_support.cpp.o\x1b[0m\n'}
+[6.508696] (my_custom_interface) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/drive__type_support.cpp.o\x1b[0m\n'}
+[6.518949] (-) TimerEvent: {}
+[6.570329] (my_custom_interface) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/order__type_support.cpp.o\x1b[0m\n'}
+[6.619054] (-) TimerEvent: {}
+[6.671566] (my_custom_interface) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/orderr__type_support.cpp.o\x1b[0m\n'}
+[6.719156] (-) TimerEvent: {}
+[6.793064] (my_custom_interface) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/action/calculator__type_support.cpp.o\x1b[0m\n'}
+[6.812310] (my_custom_interface) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/order__type_support.cpp.o\x1b[0m\n'}
+[6.819263] (-) TimerEvent: {}
+[6.820679] (my_custom_interface) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/orderr__type_support.cpp.o\x1b[0m\n'}
+[6.825716] (my_custom_interface) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/action/detail/calculator__type_support.cpp.o\x1b[0m\n'}
+[6.834924] (my_custom_interface) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/action/detail/cal__type_support.cpp.o\x1b[0m\n'}
+[6.883558] (my_custom_interface) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/action/cal__type_support.cpp.o\x1b[0m\n'}
+[6.917082] (my_custom_interface) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/action/detail/come__type_support.cpp.o\x1b[0m\n'}
+[6.919345] (-) TimerEvent: {}
+[6.933643] (my_custom_interface) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libmy_custom_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.933956] (my_custom_interface) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/action/come__type_support.cpp.o\x1b[0m\n'}
+[6.937424] (my_custom_interface) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/abc__type_support.cpp.o\x1b[0m\n'}
+[6.937859] (my_custom_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/rotatehome__type_support.cpp.o\x1b[0m\n'}
+[6.976096] (my_custom_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/two_string_service__type_support.cpp.o\x1b[0m\n'}
+[7.018429] (my_custom_interface) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libmy_custom_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.021683] (-) TimerEvent: {}
+[7.072564] (my_custom_interface) StdoutLine: {'line': b'[ 51%] Built target my_custom_interface__rosidl_typesupport_cpp\n'}
+[7.083439] (my_custom_interface) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/complete__type_support.cpp.o\x1b[0m\n'}
+[7.114935] (my_custom_interface) StdoutLine: {'line': b'[ 52%] Built target my_custom_interface__rosidl_typesupport_c\n'}
+[7.121064] (my_custom_interface) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/drive__type_support.cpp.o\x1b[0m\n'}
+[7.121762] (-) TimerEvent: {}
+[7.207348] (my_custom_interface) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/abc__type_support.c.o\x1b[0m\n'}
+[7.221883] (-) TimerEvent: {}
+[7.272497] (my_custom_interface) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/rotatehome__type_support.c.o\x1b[0m\n'}
+[7.304501] (my_custom_interface) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/abc__type_support_c.cpp.o\x1b[0m\n'}
+[7.321989] (-) TimerEvent: {}
+[7.367092] (my_custom_interface) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/two_string_service__type_support.c.o\x1b[0m\n'}
+[7.422300] (-) TimerEvent: {}
+[7.426123] (my_custom_interface) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/complete__type_support.c.o\x1b[0m\n'}
+[7.518228] (my_custom_interface) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/drive__type_support.c.o\x1b[0m\n'}
+[7.530357] (-) TimerEvent: {}
+[7.622814] (my_custom_interface) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/order__type_support.c.o\x1b[0m\n'}
+[7.630438] (-) TimerEvent: {}
+[7.665681] (my_custom_interface) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/rotatehome__type_support_c.cpp.o\x1b[0m\n'}
+[7.675098] (my_custom_interface) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/order__type_support.cpp.o\x1b[0m\n'}
+[7.730554] (-) TimerEvent: {}
+[7.733502] (my_custom_interface) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/orderr__type_support.c.o\x1b[0m\n'}
+[7.827468] (my_custom_interface) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/action/detail/dds_fastrtps/calculator__type_support.cpp.o\x1b[0m\n'}
+[7.827731] (my_custom_interface) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/orderr__type_support.cpp.o\x1b[0m\n'}
+[7.827887] (my_custom_interface) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/action/detail/calculator__type_support.c.o\x1b[0m\n'}
+[7.830664] (-) TimerEvent: {}
+[7.869743] (my_custom_interface) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/action/detail/dds_fastrtps/cal__type_support.cpp.o\x1b[0m\n'}
+[7.931290] (-) TimerEvent: {}
+[7.932320] (my_custom_interface) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/action/detail/cal__type_support.c.o\x1b[0m\n'}
+[7.936695] (my_custom_interface) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/two_string_service__type_support_c.cpp.o\x1b[0m\n'}
+[8.008728] (my_custom_interface) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/complete__type_support_c.cpp.o\x1b[0m\n'}
+[8.020425] (my_custom_interface) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/action/detail/dds_fastrtps/come__type_support.cpp.o\x1b[0m\n'}
+[8.020665] (my_custom_interface) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/action/detail/come__type_support.c.o\x1b[0m\n'}
+[8.031936] (-) TimerEvent: {}
+[8.051083] (my_custom_interface) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/drive__type_support_c.cpp.o\x1b[0m\n'}
+[8.051316] (my_custom_interface) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/order__type_support_c.cpp.o\x1b[0m\n'}
+[8.098472] (my_custom_interface) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libmy_custom_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[8.111512] (my_custom_interface) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C shared library libmy_custom_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.132051] (-) TimerEvent: {}
+[8.222846] (my_custom_interface) StdoutLine: {'line': b'[ 76%] Built target my_custom_interface__rosidl_typesupport_introspection_c\n'}
+[8.234037] (-) TimerEvent: {}
+[8.235820] (my_custom_interface) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/orderr__type_support_c.cpp.o\x1b[0m\n'}
+[8.334143] (-) TimerEvent: {}
+[8.386984] (my_custom_interface) StdoutLine: {'line': b'[ 77%] Built target my_custom_interface__rosidl_typesupport_introspection_cpp\n'}
+[8.396925] (my_custom_interface) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/action/detail/calculator__type_support_c.cpp.o\x1b[0m\n'}
+[8.410301] (my_custom_interface) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/action/detail/cal__type_support_c.cpp.o\x1b[0m\n'}
+[8.434250] (-) TimerEvent: {}
+[8.534592] (-) TimerEvent: {}
+[8.624603] (my_custom_interface) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/action/detail/come__type_support_c.cpp.o\x1b[0m\n'}
+[8.635504] (-) TimerEvent: {}
+[8.735833] (-) TimerEvent: {}
+[8.836161] (-) TimerEvent: {}
+[8.936514] (-) TimerEvent: {}
+[9.022521] (my_custom_interface) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libmy_custom_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[9.036621] (-) TimerEvent: {}
+[9.116134] (my_custom_interface) StdoutLine: {'line': b'[ 81%] Built target my_custom_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[9.133868] (my_custom_interface) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX shared library libmy_custom_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[9.136723] (-) TimerEvent: {}
+[9.207527] (my_custom_interface) StdoutLine: {'line': b'[ 82%] Built target my_custom_interface__rosidl_typesupport_fastrtps_c\n'}
+[9.224630] (my_custom_interface) StdoutLine: {'line': b'[ 82%] Built target my_custom_interface\n'}
+[9.236224] (my_custom_interface) StdoutLine: {'line': b'[ 83%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.236826] (-) TimerEvent: {}
+[9.337034] (-) TimerEvent: {}
+[9.437281] (-) TimerEvent: {}
+[9.537551] (-) TimerEvent: {}
+[9.637811] (-) TimerEvent: {}
+[9.738080] (-) TimerEvent: {}
+[9.838314] (-) TimerEvent: {}
+[9.938604] (-) TimerEvent: {}
+[10.038851] (-) TimerEvent: {}
+[10.139107] (-) TimerEvent: {}
+[10.239378] (-) TimerEvent: {}
+[10.339637] (-) TimerEvent: {}
+[10.439902] (-) TimerEvent: {}
+[10.540175] (-) TimerEvent: {}
+[10.640452] (-) TimerEvent: {}
+[10.740719] (-) TimerEvent: {}
+[10.840978] (-) TimerEvent: {}
+[10.941243] (-) TimerEvent: {}
+[11.041507] (-) TimerEvent: {}
+[11.141761] (-) TimerEvent: {}
+[11.242010] (-) TimerEvent: {}
+[11.342220] (-) TimerEvent: {}
+[11.442451] (-) TimerEvent: {}
+[11.542670] (-) TimerEvent: {}
+[11.642956] (-) TimerEvent: {}
+[11.743206] (-) TimerEvent: {}
+[11.843452] (-) TimerEvent: {}
+[11.931657] (my_custom_interface) StdoutLine: {'line': b'[ 83%] Built target my_custom_interface__py\n'}
+[11.941207] (my_custom_interface) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_abc_s.c.o\x1b[0m\n'}
+[11.941770] (my_custom_interface) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_two_string_service_s.c.o\x1b[0m\n'}
+[11.941923] (my_custom_interface) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_rotatehome_s.c.o\x1b[0m\n'}
+[11.942160] (my_custom_interface) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_complete_s.c.o\x1b[0m\n'}
+[11.942364] (my_custom_interface) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_drive_s.c.o\x1b[0m\n'}
+[11.942824] (my_custom_interface) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_order_s.c.o\x1b[0m\n'}
+[11.943258] (my_custom_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_orderr_s.c.o\x1b[0m\n'}
+[11.943436] (my_custom_interface) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/action/_calculator_s.c.o\x1b[0m\n'}
+[11.943570] (-) TimerEvent: {}
+[11.943797] (my_custom_interface) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/action/_cal_s.c.o\x1b[0m\n'}
+[11.944237] (my_custom_interface) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/action/_come_s.c.o\x1b[0m\n'}
+[12.043696] (-) TimerEvent: {}
+[12.144032] (-) TimerEvent: {}
+[12.198061] (my_custom_interface) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_custom_interface/libmy_custom_interface__rosidl_generator_py.so\x1b[0m\n'}
+[12.237573] (my_custom_interface) StdoutLine: {'line': b'[ 94%] Built target my_custom_interface__rosidl_generator_py\n'}
+[12.244126] (-) TimerEvent: {}
+[12.246725] (my_custom_interface) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.246959] (my_custom_interface) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.247121] (my_custom_interface) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.344248] (-) TimerEvent: {}
+[12.444502] (-) TimerEvent: {}
+[12.467160] (my_custom_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_custom_interface/my_custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.467378] (my_custom_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_custom_interface/my_custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.467514] (my_custom_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_custom_interface/my_custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.512703] (my_custom_interface) StdoutLine: {'line': b'[100%] Built target my_custom_interface__rosidl_typesupport_c__pyext\n'}
+[12.512947] (my_custom_interface) StdoutLine: {'line': b'[100%] Built target my_custom_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[12.513081] (my_custom_interface) StdoutLine: {'line': b'[100%] Built target my_custom_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[12.520581] (my_custom_interface) CommandEnded: {'returncode': 0}
+[12.522155] (my_custom_interface) JobProgress: {'identifier': 'my_custom_interface', 'progress': 'install'}
+[12.544581] (-) TimerEvent: {}
+[12.607210] (my_custom_interface) Command: {'cmd': ['/home/harry/.local/bin/cmake', '--install', '/home/harry/aaa/build/my_custom_interface'], 'cwd': '/home/harry/aaa/build/my_custom_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'harry'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/harry/a/install/my_custom_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/harry'), ('OLDPWD', '/home/harry'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1395'), ('SYSTEMD_EXEC_PID', '1739'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '348770'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/harry/a/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'harry'), ('JOURNAL_STREAM', '8:18532'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'harry'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/harry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/harry:@/tmp/.ICE-unix/1545,unix/harry:/tmp/.ICE-unix/1545'), ('INVOCATION_ID', '00561f14d8b74fc1a80d7ccad8f3ad69'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ULBOX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/harry/a/install/term_project:/home/harry/a/install/my_custom_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:db44d02c-f497-4ae4-811e-567c6086af9c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('WEBOTS_HOME', '/mnt/c/Program Files/Webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/harry/aaa/build/my_custom_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/harry/a/install/term_project/lib/python3.10/site-packages:/home/harry/a/install/my_custom_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/harry/a/install/my_custom_interface:/home/harry/a/install/term_project:/opt/ros/humble')]), 'shell': False}
+[12.644670] (-) TimerEvent: {}
+[12.678843] (my_custom_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.679353] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/ament_index/resource_index/rosidl_interfaces/my_custom_interface\n'}
+[12.679545] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface\n'}
+[12.679740] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action\n'}
+[12.679853] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/cal.h\n'}
+[12.679987] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/calculator.h\n'}
+[12.680136] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail\n'}
+[12.680269] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__functions.c\n'}
+[12.680412] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__functions.c\n'}
+[12.680524] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__struct.h\n'}
+[12.680661] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__functions.h\n'}
+[12.680766] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__type_support.h\n'}
+[12.680892] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__functions.h\n'}
+[12.681009] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__type_support.h\n'}
+[12.681129] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__struct.h\n'}
+[12.681257] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__struct.h\n'}
+[12.681360] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__type_support.h\n'}
+[12.681483] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__functions.h\n'}
+[12.681592] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__functions.c\n'}
+[12.681698] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/come.h\n'}
+[12.681844] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv\n'}
+[12.681977] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/order.h\n'}
+[12.682096] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/abc.h\n'}
+[12.682214] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/complete.h\n'}
+[12.682334] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/orderr.h\n'}
+[12.682478] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail\n'}
+[12.682593] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__struct.h\n'}
+[12.682702] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__functions.c\n'}
+[12.682833] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__type_support.h\n'}
+[12.682951] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__functions.c\n'}
+[12.683077] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__functions.h\n'}
+[12.683185] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__functions.c\n'}
+[12.683316] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__functions.h\n'}
+[12.683440] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__functions.h\n'}
+[12.683558] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__type_support.h\n'}
+[12.683664] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__functions.h\n'}
+[12.683813] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__type_support.h\n'}
+[12.683930] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__type_support.h\n'}
+[12.684046] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__functions.c\n'}
+[12.684154] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__functions.c\n'}
+[12.684282] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__type_support.h\n'}
+[12.684420] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__type_support.h\n'}
+[12.684542] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__functions.h\n'}
+[12.684663] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__functions.c\n'}
+[12.684786] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__functions.h\n'}
+[12.684895] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__struct.h\n'}
+[12.685026] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__struct.h\n'}
+[12.685146] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__functions.h\n'}
+[12.685271] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__struct.h\n'}
+[12.685383] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__type_support.h\n'}
+[12.685493] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__struct.h\n'}
+[12.685595] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__struct.h\n'}
+[12.685696] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__functions.c\n'}
+[12.685803] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__struct.h\n'}
+[12.685927] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/two_string_service.h\n'}
+[12.686030] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/drive.h\n'}
+[12.686151] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/rotatehome.h\n'}
+[12.686254] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg\n'}
+[12.686375] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.686485] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/library_path.sh\n'}
+[12.686590] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/library_path.dsv\n'}
+[12.686692] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_generator_c.so\n'}
+[12.687264] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_generator_c.so" to ""\n'}
+[12.687430] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface\n'}
+[12.687570] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action\n'}
+[12.687675] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail\n'}
+[12.687815] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__rosidl_typesupport_fastrtps_c.h\n'}
+[12.687934] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__rosidl_typesupport_fastrtps_c.h\n'}
+[12.688049] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__rosidl_typesupport_fastrtps_c.h\n'}
+[12.688199] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv\n'}
+[12.688309] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail\n'}
+[12.688474] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__rosidl_typesupport_fastrtps_c.h\n'}
+[12.688601] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__rosidl_typesupport_fastrtps_c.h\n'}
+[12.688705] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__rosidl_typesupport_fastrtps_c.h\n'}
+[12.688822] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__rosidl_typesupport_fastrtps_c.h\n'}
+[12.688923] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__rosidl_typesupport_fastrtps_c.h\n'}
+[12.689021] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__rosidl_typesupport_fastrtps_c.h\n'}
+[12.689119] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__rosidl_typesupport_fastrtps_c.h\n'}
+[12.689223] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg\n'}
+[12.689365] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.689501] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[12.689616] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[12.689732] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface\n'}
+[12.689835] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action\n'}
+[12.689945] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail\n'}
+[12.690093] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__type_support.c\n'}
+[12.690207] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__rosidl_typesupport_introspection_c.h\n'}
+[12.690336] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__rosidl_typesupport_introspection_c.h\n'}
+[12.690450] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__type_support.c\n'}
+[12.690588] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__rosidl_typesupport_introspection_c.h\n'}
+[12.690703] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__type_support.c\n'}
+[12.690804] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv\n'}
+[12.690941] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail\n'}
+[12.691071] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__type_support.c\n'}
+[12.691213] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__rosidl_typesupport_introspection_c.h\n'}
+[12.691357] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__type_support.c\n'}
+[12.691485] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__type_support.c\n'}
+[12.691590] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__type_support.c\n'}
+[12.691735] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__rosidl_typesupport_introspection_c.h\n'}
+[12.691858] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__type_support.c\n'}
+[12.691960] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__rosidl_typesupport_introspection_c.h\n'}
+[12.692062] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__rosidl_typesupport_introspection_c.h\n'}
+[12.692163] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__rosidl_typesupport_introspection_c.h\n'}
+[12.692274] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__rosidl_typesupport_introspection_c.h\n'}
+[12.692422] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__type_support.c\n'}
+[12.692526] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__type_support.c\n'}
+[12.692625] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__rosidl_typesupport_introspection_c.h\n'}
+[12.692727] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg\n'}
+[12.692837] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.692968] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_introspection_c.so\n'}
+[12.693090] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[12.693230] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_c.so\n'}
+[12.693380] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_c.so" to ""\n'}
+[12.693515] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface\n'}
+[12.693632] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action\n'}
+[12.693735] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/come.hpp\n'}
+[12.693860] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail\n'}
+[12.693967] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__struct.hpp\n'}
+[12.694107] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__builder.hpp\n'}
+[12.694226] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__struct.hpp\n'}
+[12.694359] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__traits.hpp\n'}
+[12.694485] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__builder.hpp\n'}
+[12.694608] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__traits.hpp\n'}
+[12.694727] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__traits.hpp\n'}
+[12.694869] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__builder.hpp\n'}
+[12.694991] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__struct.hpp\n'}
+[12.695097] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/cal.hpp\n'}
+[12.695225] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/calculator.hpp\n'}
+[12.695346] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv\n'}
+[12.695472] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/two_string_service.hpp\n'}
+[12.695590] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/drive.hpp\n'}
+[12.695724] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/orderr.hpp\n'}
+[12.695827] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/complete.hpp\n'}
+[12.695963] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/abc.hpp\n'}
+[12.696085] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail\n'}
+[12.696208] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__builder.hpp\n'}
+[12.696329] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__struct.hpp\n'}
+[12.696459] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__traits.hpp\n'}
+[12.696581] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__struct.hpp\n'}
+[12.696697] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__struct.hpp\n'}
+[12.696805] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__builder.hpp\n'}
+[12.696951] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__builder.hpp\n'}
+[12.697057] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__traits.hpp\n'}
+[12.697188] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__builder.hpp\n'}
+[12.697305] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__struct.hpp\n'}
+[12.697445] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__traits.hpp\n'}
+[12.697567] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__struct.hpp\n'}
+[12.697673] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__struct.hpp\n'}
+[12.697808] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__traits.hpp\n'}
+[12.697947] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__struct.hpp\n'}
+[12.698070] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__builder.hpp\n'}
+[12.698202] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__traits.hpp\n'}
+[12.698307] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__traits.hpp\n'}
+[12.698445] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__builder.hpp\n'}
+[12.698556] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__traits.hpp\n'}
+[12.698660] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__builder.hpp\n'}
+[12.698801] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/rotatehome.hpp\n'}
+[12.698924] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/order.hpp\n'}
+[12.699025] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface\n'}
+[12.699151] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action\n'}
+[12.699253] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail\n'}
+[12.699354] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.699467] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.699571] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.699674] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/dds_fastrtps\n'}
+[12.699781] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv\n'}
+[12.699888] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail\n'}
+[12.700037] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.700158] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.700277] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.700391] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.700546] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.700672] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/dds_fastrtps\n'}
+[12.700775] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.700885] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.701037] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg\n'}
+[12.701159] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.701279] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.701415] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[12.701538] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface\n'}
+[12.701641] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action\n'}
+[12.701787] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail\n'}
+[12.701892] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.701995] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__type_support.cpp\n'}
+[12.702147] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.702248] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__type_support.cpp\n'}
+[12.702349] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__type_support.cpp\n'}
+[12.702460] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.702567] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv\n'}
+[12.702699] (my_custom_interface) StdoutLine: {'line': b'-- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail\n'}
+[12.702801] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__type_support.cpp\n'}
+[12.702903] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.703008] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__type_support.cpp\n'}
+[12.703114] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__type_support.cpp\n'}
+[12.703220] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.703376] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__type_support.cpp\n'}
+[12.703504] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.703624] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.703744] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.703850] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__type_support.cpp\n'}
+[12.703957] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__type_support.cpp\n'}
+[12.704111] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.704232] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.704335] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__type_support.cpp\n'}
+[12.704480] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[12.704606] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[12.704723] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_cpp.so\n'}
+[12.704855] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[12.704982] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/pythonpath.sh\n'}
+[12.705105] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/pythonpath.dsv\n'}
+[12.705224] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface-0.0.0-py3.10.egg-info\n'}
+[12.705338] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[12.705506] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[12.705630] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[12.705742] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[12.705890] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface\n'}
+[12.706024] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.706150] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/__init__.py\n'}
+[12.706275] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action\n'}
+[12.706394] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/__init__.py\n'}
+[12.706542] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_come_s.c\n'}
+[12.706668] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_cal.py\n'}
+[12.706790] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_come.py\n'}
+[12.706938] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_calculator.py\n'}
+[12.707066] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_cal_s.c\n'}
+[12.707192] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_calculator_s.c\n'}
+[12.707320] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/libmy_custom_interface__rosidl_generator_py.so\n'}
+[12.707452] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv\n'}
+[12.707580] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_two_string_service_s.c\n'}
+[12.707694] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_complete.py\n'}
+[12.707817] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/__init__.py\n'}
+[12.707923] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_drive.py\n'}
+[12.708037] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_complete_s.c\n'}
+[12.708170] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_order.py\n'}
+[12.708286] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_abc_s.c\n'}
+[12.708438] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_drive_s.c\n'}
+[12.708561] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_orderr.py\n'}
+[12.708671] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_two_string_service.py\n'}
+[12.708784] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_rotatehome_s.c\n'}
+[12.708896] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_rotatehome.py\n'}
+[12.709009] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_abc.py\n'}
+[12.709122] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_order_s.c\n'}
+[12.709235] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_orderr_s.c\n'}
+[12.709346] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.709470] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_c.c\n'}
+[12.709588] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.709700] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.709806] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.744760] (-) TimerEvent: {}
+[12.761386] (my_custom_interface) StdoutLine: {'line': b"Listing '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface'...\n"}
+[12.761576] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/__init__.py'...\n"}
+[12.761692] (my_custom_interface) StdoutLine: {'line': b"Listing '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action'...\n"}
+[12.761798] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/__init__.py'...\n"}
+[12.761909] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_cal.py'...\n"}
+[12.762015] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_calculator.py'...\n"}
+[12.762119] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_come.py'...\n"}
+[12.762228] (my_custom_interface) StdoutLine: {'line': b"Listing '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv'...\n"}
+[12.762336] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/__init__.py'...\n"}
+[12.762453] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_abc.py'...\n"}
+[12.762563] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_complete.py'...\n"}
+[12.762672] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_drive.py'...\n"}
+[12.762780] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_order.py'...\n"}
+[12.762889] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_orderr.py'...\n"}
+[12.762997] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_rotatehome.py'...\n"}
+[12.763105] (my_custom_interface) StdoutLine: {'line': b"Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_two_string_service.py'...\n"}
+[12.765650] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.766100] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[12.766312] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.766825] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[12.767052] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.767507] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[12.767652] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_generator_py.so\n'}
+[12.768028] (my_custom_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_generator_py.so" to ""\n'}
+[12.768162] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ABC.idl\n'}
+[12.768297] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ROTATEHOME.idl\n'}
+[12.768425] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/TwoStringService.idl\n'}
+[12.768552] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/COMPLETE.idl\n'}
+[12.768691] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/DRIVE.idl\n'}
+[12.768796] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDER.idl\n'}
+[12.768912] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDERR.idl\n'}
+[12.769041] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/Calculator.idl\n'}
+[12.769161] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/Cal.idl\n'}
+[12.769274] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/COME.idl\n'}
+[12.769413] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ABC.srv\n'}
+[12.769548] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ABC_Request.msg\n'}
+[12.769710] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ABC_Response.msg\n'}
+[12.769842] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ROTATEHOME.srv\n'}
+[12.770000] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ROTATEHOME_Request.msg\n'}
+[12.770156] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ROTATEHOME_Response.msg\n'}
+[12.770281] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/TwoStringService.srv\n'}
+[12.770519] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/TwoStringService_Request.msg\n'}
+[12.770707] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/TwoStringService_Response.msg\n'}
+[12.770838] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/COMPLETE.srv\n'}
+[12.771011] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/COMPLETE_Request.msg\n'}
+[12.771147] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/COMPLETE_Response.msg\n'}
+[12.771296] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/DRIVE.srv\n'}
+[12.771439] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/DRIVE_Request.msg\n'}
+[12.771610] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/DRIVE_Response.msg\n'}
+[12.771746] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDER.srv\n'}
+[12.771877] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDER_Request.msg\n'}
+[12.772069] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDER_Response.msg\n'}
+[12.772242] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDERR.srv\n'}
+[12.772401] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDERR_Request.msg\n'}
+[12.772566] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDERR_Response.msg\n'}
+[12.772714] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/Calculator.action\n'}
+[12.772862] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/Cal.action\n'}
+[12.773098] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/COME.action\n'}
+[12.773364] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/ament_index/resource_index/package_run_dependencies/my_custom_interface\n'}
+[12.773538] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/ament_index/resource_index/parent_prefix_path/my_custom_interface\n'}
+[12.774169] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/ament_prefix_path.sh\n'}
+[12.774448] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/ament_prefix_path.dsv\n'}
+[12.774615] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/path.sh\n'}
+[12.774878] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/path.dsv\n'}
+[12.775070] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/local_setup.bash\n'}
+[12.775223] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/local_setup.sh\n'}
+[12.775396] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/local_setup.zsh\n'}
+[12.775545] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/local_setup.dsv\n'}
+[12.775659] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/package.dsv\n'}
+[12.775789] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/ament_index/resource_index/packages/my_custom_interface\n'}
+[12.775922] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_generator_cExport.cmake\n'}
+[12.776051] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[12.776182] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[12.776316] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[12.777076] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[12.777164] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[12.777265] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_cExport.cmake\n'}
+[12.777325] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[12.777383] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_generator_cppExport.cmake\n'}
+[12.777441] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[12.777495] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[12.777608] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[12.777671] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[12.777776] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_cppExport.cmake\n'}
+[12.777887] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[12.778033] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_generator_pyExport.cmake\n'}
+[12.778200] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[12.778284] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[12.778385] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.778583] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.778746] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.778915] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.779043] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[12.779188] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[12.779294] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interfaceConfig.cmake\n'}
+[12.779378] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interfaceConfig-version.cmake\n'}
+[12.779495] (my_custom_interface) StdoutLine: {'line': b'-- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/package.xml\n'}
+[12.781599] (my_custom_interface) CommandEnded: {'returncode': 0}
+[12.804977] (my_custom_interface) JobEnded: {'identifier': 'my_custom_interface', 'rc': 0}
+[12.805459] (term_project) JobStarted: {'identifier': 'term_project'}
+[12.844883] (-) TimerEvent: {}
+[12.945116] (-) TimerEvent: {}
+[13.045355] (-) TimerEvent: {}
+[13.145563] (-) TimerEvent: {}
+[13.245792] (-) TimerEvent: {}
+[13.346039] (-) TimerEvent: {}
+[13.446270] (-) TimerEvent: {}
+[13.546500] (-) TimerEvent: {}
+[13.646734] (-) TimerEvent: {}
+[13.739653] (term_project) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/term_project', 'build', '--build-base', '/home/harry/aaa/build/term_project/build', 'install', '--record', '/home/harry/aaa/build/term_project/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/harry/aaa/src/term_project', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'harry', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/harry/aaa/install/my_custom_interface/lib:/home/harry/a/install/my_custom_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/harry', 'OLDPWD': '/home/harry', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1395', 'SYSTEMD_EXEC_PID': '1739', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '348770', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/harry/a/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'harry', 'JOURNAL_STREAM': '8:18532', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'harry', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/harry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/harry:@/tmp/.ICE-unix/1545,unix/harry:/tmp/.ICE-unix/1545', 'INVOCATION_ID': '00561f14d8b74fc1a80d7ccad8f3ad69', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ULBOX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/harry/aaa/install/my_custom_interface:/home/harry/a/install/term_project:/home/harry/a/install/my_custom_interface:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:db44d02c-f497-4ae4-811e-567c6086af9c', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'WEBOTS_HOME': '/mnt/c/Program Files/Webots', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/harry/aaa/build/term_project', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/harry/aaa/build/term_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harry/aaa/install/term_project/lib/python3.10/site-packages:/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages:/home/harry/a/install/term_project/lib/python3.10/site-packages:/home/harry/a/install/my_custom_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/harry/aaa/install/my_custom_interface:/home/harry/a/install/my_custom_interface'}, 'shell': False}
+[13.746845] (-) TimerEvent: {}
+[13.847081] (-) TimerEvent: {}
+[13.947323] (-) TimerEvent: {}
+[14.002953] (term_project) StdoutLine: {'line': b'running egg_info\n'}
+[14.003339] (term_project) StdoutLine: {'line': b'creating ../../build/term_project/term_project.egg-info\n'}
+[14.003533] (term_project) StdoutLine: {'line': b'writing ../../build/term_project/term_project.egg-info/PKG-INFO\n'}
+[14.003723] (term_project) StdoutLine: {'line': b'writing dependency_links to ../../build/term_project/term_project.egg-info/dependency_links.txt\n'}
+[14.003882] (term_project) StdoutLine: {'line': b'writing entry points to ../../build/term_project/term_project.egg-info/entry_points.txt\n'}
+[14.004022] (term_project) StdoutLine: {'line': b'writing requirements to ../../build/term_project/term_project.egg-info/requires.txt\n'}
+[14.004082] (term_project) StdoutLine: {'line': b'writing top-level names to ../../build/term_project/term_project.egg-info/top_level.txt\n'}
+[14.004246] (term_project) StdoutLine: {'line': b"writing manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'\n"}
+[14.005718] (term_project) StdoutLine: {'line': b"reading manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'\n"}
+[14.006383] (term_project) StdoutLine: {'line': b"writing manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'\n"}
+[14.006543] (term_project) StdoutLine: {'line': b'running build\n'}
+[14.006608] (term_project) StdoutLine: {'line': b'running build_py\n'}
+[14.006770] (term_project) StdoutLine: {'line': b'creating /home/harry/aaa/build/term_project/build\n'}
+[14.006845] (term_project) StdoutLine: {'line': b'creating /home/harry/aaa/build/term_project/build/lib\n'}
+[14.006907] (term_project) StdoutLine: {'line': b'creating /home/harry/aaa/build/term_project/build/lib/term_project\n'}
+[14.006963] (term_project) StdoutLine: {'line': b'copying term_project/machine2.py -> /home/harry/aaa/build/term_project/build/lib/term_project\n'}
+[14.007050] (term_project) StdoutLine: {'line': b'copying term_project/__init__.py -> /home/harry/aaa/build/term_project/build/lib/term_project\n'}
+[14.007105] (term_project) StdoutLine: {'line': b'copying term_project/test_machine3.py -> /home/harry/aaa/build/term_project/build/lib/term_project\n'}
+[14.007445] (term_project) StdoutLine: {'line': b'copying term_project/robot.py -> /home/harry/aaa/build/term_project/build/lib/term_project\n'}
+[14.007639] (term_project) StdoutLine: {'line': b'copying term_project/kiosk_service.py -> /home/harry/aaa/build/term_project/build/lib/term_project\n'}
+[14.007885] (term_project) StdoutLine: {'line': b'copying term_project/kiosk_action.py -> /home/harry/aaa/build/term_project/build/lib/term_project\n'}
+[14.008093] (term_project) StdoutLine: {'line': b'copying term_project/robot_sub.py -> /home/harry/aaa/build/term_project/build/lib/term_project\n'}
+[14.008309] (term_project) StdoutLine: {'line': b'copying term_project/machine3.py -> /home/harry/aaa/build/term_project/build/lib/term_project\n'}
+[14.008867] (term_project) StdoutLine: {'line': b'running install\n'}
+[14.009148] (term_project) StdoutLine: {'line': b'running install_lib\n'}
+[14.009766] (term_project) StdoutLine: {'line': b'creating /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project\n'}
+[14.009942] (term_project) StdoutLine: {'line': b'copying /home/harry/aaa/build/term_project/build/lib/term_project/machine2.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project\n'}
+[14.010058] (term_project) StdoutLine: {'line': b'copying /home/harry/aaa/build/term_project/build/lib/term_project/__init__.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project\n'}
+[14.010153] (term_project) StdoutLine: {'line': b'copying /home/harry/aaa/build/term_project/build/lib/term_project/test_machine3.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project\n'}
+[14.010285] (term_project) StdoutLine: {'line': b'copying /home/harry/aaa/build/term_project/build/lib/term_project/robot.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project\n'}
+[14.010414] (term_project) StdoutLine: {'line': b'copying /home/harry/aaa/build/term_project/build/lib/term_project/kiosk_service.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project\n'}
+[14.010509] (term_project) StdoutLine: {'line': b'copying /home/harry/aaa/build/term_project/build/lib/term_project/kiosk_action.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project\n'}
+[14.010590] (term_project) StdoutLine: {'line': b'copying /home/harry/aaa/build/term_project/build/lib/term_project/robot_sub.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project\n'}
+[14.010676] (term_project) StdoutLine: {'line': b'copying /home/harry/aaa/build/term_project/build/lib/term_project/machine3.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project\n'}
+[14.010787] (term_project) StdoutLine: {'line': b'byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/machine2.py to machine2.cpython-310.pyc\n'}
+[14.011472] (term_project) StdoutLine: {'line': b'byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/__init__.py to __init__.cpython-310.pyc\n'}
+[14.011683] (term_project) StdoutLine: {'line': b'byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/test_machine3.py to test_machine3.cpython-310.pyc\n'}
+[14.012816] (term_project) StdoutLine: {'line': b'byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/robot.py to robot.cpython-310.pyc\n'}
+[14.013127] (term_project) StdoutLine: {'line': b'byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/kiosk_service.py to kiosk_service.cpython-310.pyc\n'}
+[14.013497] (term_project) StdoutLine: {'line': b'byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/kiosk_action.py to kiosk_action.cpython-310.pyc\n'}
+[14.013917] (term_project) StdoutLine: {'line': b'byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/robot_sub.py to robot_sub.cpython-310.pyc\n'}
+[14.014265] (term_project) StdoutLine: {'line': b'byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/machine3.py to machine3.cpython-310.pyc\n'}
+[14.014809] (term_project) StdoutLine: {'line': b'running install_data\n'}
+[14.014967] (term_project) StdoutLine: {'line': b'creating /home/harry/aaa/install/term_project/share/ament_index\n'}
+[14.015067] (term_project) StdoutLine: {'line': b'creating /home/harry/aaa/install/term_project/share/ament_index/resource_index\n'}
+[14.015125] (term_project) StdoutLine: {'line': b'creating /home/harry/aaa/install/term_project/share/ament_index/resource_index/packages\n'}
+[14.015217] (term_project) StdoutLine: {'line': b'copying resource/term_project -> /home/harry/aaa/install/term_project/share/ament_index/resource_index/packages\n'}
+[14.015337] (term_project) StdoutLine: {'line': b'copying package.xml -> /home/harry/aaa/install/term_project/share/term_project\n'}
+[14.015451] (term_project) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.016799] (term_project) StdoutLine: {'line': b'Copying ../../build/term_project/term_project.egg-info to /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project-0.0.0-py3.10.egg-info\n'}
+[14.017517] (term_project) StdoutLine: {'line': b'running install_scripts\n'}
+[14.034467] (term_project) StdoutLine: {'line': b'Installing kiosk_action script to /home/harry/aaa/install/term_project/lib/term_project\n'}
+[14.034663] (term_project) StdoutLine: {'line': b'Installing kiosk_service script to /home/harry/aaa/install/term_project/lib/term_project\n'}
+[14.034727] (term_project) StdoutLine: {'line': b'Installing machine2 script to /home/harry/aaa/install/term_project/lib/term_project\n'}
+[14.034831] (term_project) StdoutLine: {'line': b'Installing machine3 script to /home/harry/aaa/install/term_project/lib/term_project\n'}
+[14.034950] (term_project) StdoutLine: {'line': b'Installing robot script to /home/harry/aaa/install/term_project/lib/term_project\n'}
+[14.035036] (term_project) StdoutLine: {'line': b'Installing robot_sub script to /home/harry/aaa/install/term_project/lib/term_project\n'}
+[14.035124] (term_project) StdoutLine: {'line': b'Installing test script to /home/harry/aaa/install/term_project/lib/term_project\n'}
+[14.035231] (term_project) StdoutLine: {'line': b"writing list of installed files to '/home/harry/aaa/build/term_project/install.log'\n"}
+[14.047450] (-) TimerEvent: {}
+[14.053125] (term_project) CommandEnded: {'returncode': 0}
+[14.058011] (term_project) JobEnded: {'identifier': 'term_project', 'rc': 0}
+[14.058416] (-) EventReactorShutdown: {}

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_custom_interface/srv/ABC.srv
+// generated code does not contain a copyright notice
+
+
+module my_custom_interface {
+  module srv {
+    struct ABC_Request {
+      string a;
+
+      string b;
+    };
+    struct ABC_Response {
+      string sum;
+    };
+  };
+};

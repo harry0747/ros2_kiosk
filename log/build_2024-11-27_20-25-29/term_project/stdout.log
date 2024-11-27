@@ -1,0 +1,59 @@
+running egg_info
+creating ../../build/term_project/term_project.egg-info
+writing ../../build/term_project/term_project.egg-info/PKG-INFO
+writing dependency_links to ../../build/term_project/term_project.egg-info/dependency_links.txt
+writing entry points to ../../build/term_project/term_project.egg-info/entry_points.txt
+writing requirements to ../../build/term_project/term_project.egg-info/requires.txt
+writing top-level names to ../../build/term_project/term_project.egg-info/top_level.txt
+writing manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'
+reading manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'
+writing manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/harry/aaa/build/term_project/build
+creating /home/harry/aaa/build/term_project/build/lib
+creating /home/harry/aaa/build/term_project/build/lib/term_project
+copying term_project/machine2.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+copying term_project/__init__.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+copying term_project/test_machine3.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+copying term_project/robot.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+copying term_project/kiosk_service.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+copying term_project/kiosk_action.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+copying term_project/robot_sub.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+copying term_project/machine3.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+running install
+running install_lib
+creating /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+copying /home/harry/aaa/build/term_project/build/lib/term_project/machine2.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+copying /home/harry/aaa/build/term_project/build/lib/term_project/__init__.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+copying /home/harry/aaa/build/term_project/build/lib/term_project/test_machine3.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+copying /home/harry/aaa/build/term_project/build/lib/term_project/robot.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+copying /home/harry/aaa/build/term_project/build/lib/term_project/kiosk_service.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+copying /home/harry/aaa/build/term_project/build/lib/term_project/kiosk_action.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+copying /home/harry/aaa/build/term_project/build/lib/term_project/robot_sub.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+copying /home/harry/aaa/build/term_project/build/lib/term_project/machine3.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/machine2.py to machine2.cpython-310.pyc
+byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/test_machine3.py to test_machine3.cpython-310.pyc
+byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/robot.py to robot.cpython-310.pyc
+byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/kiosk_service.py to kiosk_service.cpython-310.pyc
+byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/kiosk_action.py to kiosk_action.cpython-310.pyc
+byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/robot_sub.py to robot_sub.cpython-310.pyc
+byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/machine3.py to machine3.cpython-310.pyc
+running install_data
+creating /home/harry/aaa/install/term_project/share/ament_index
+creating /home/harry/aaa/install/term_project/share/ament_index/resource_index
+creating /home/harry/aaa/install/term_project/share/ament_index/resource_index/packages
+copying resource/term_project -> /home/harry/aaa/install/term_project/share/ament_index/resource_index/packages
+copying package.xml -> /home/harry/aaa/install/term_project/share/term_project
+running install_egg_info
+Copying ../../build/term_project/term_project.egg-info to /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project-0.0.0-py3.10.egg-info
+running install_scripts
+Installing kiosk_action script to /home/harry/aaa/install/term_project/lib/term_project
+Installing kiosk_service script to /home/harry/aaa/install/term_project/lib/term_project
+Installing machine2 script to /home/harry/aaa/install/term_project/lib/term_project
+Installing machine3 script to /home/harry/aaa/install/term_project/lib/term_project
+Installing robot script to /home/harry/aaa/install/term_project/lib/term_project
+Installing robot_sub script to /home/harry/aaa/install/term_project/lib/term_project
+Installing test script to /home/harry/aaa/install/term_project/lib/term_project
+writing list of installed files to '/home/harry/aaa/build/term_project/install.log'

@@ -1,0 +1,61 @@
+[0.935s] Invoking command in '/home/harry/aaa/src/term_project': AMENT_PREFIX_PATH=/home/harry/aaa/install/my_custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/harry/aaa/install/my_custom_interface:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/harry/aaa/install/my_custom_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/harry/aaa/build/term_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harry/aaa/install/term_project/lib/python3.10/site-packages:/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/term_project build --build-base /home/harry/aaa/build/term_project/build install --record /home/harry/aaa/build/term_project/install.log --single-version-externally-managed install_data
+[1.198s] running egg_info
+[1.198s] creating ../../build/term_project/term_project.egg-info
+[1.198s] writing ../../build/term_project/term_project.egg-info/PKG-INFO
+[1.198s] writing dependency_links to ../../build/term_project/term_project.egg-info/dependency_links.txt
+[1.199s] writing entry points to ../../build/term_project/term_project.egg-info/entry_points.txt
+[1.199s] writing requirements to ../../build/term_project/term_project.egg-info/requires.txt
+[1.199s] writing top-level names to ../../build/term_project/term_project.egg-info/top_level.txt
+[1.199s] writing manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'
+[1.200s] reading manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'
+[1.201s] writing manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'
+[1.201s] running build
+[1.201s] running build_py
+[1.201s] creating /home/harry/aaa/build/term_project/build
+[1.201s] creating /home/harry/aaa/build/term_project/build/lib
+[1.201s] creating /home/harry/aaa/build/term_project/build/lib/term_project
+[1.202s] copying term_project/machine2.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+[1.202s] copying term_project/__init__.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+[1.202s] copying term_project/test_machine3.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+[1.202s] copying term_project/robot.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+[1.202s] copying term_project/kiosk_service.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+[1.202s] copying term_project/kiosk_action.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+[1.203s] copying term_project/robot_sub.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+[1.203s] copying term_project/machine3.py -> /home/harry/aaa/build/term_project/build/lib/term_project
+[1.203s] running install
+[1.204s] running install_lib
+[1.204s] creating /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+[1.205s] copying /home/harry/aaa/build/term_project/build/lib/term_project/machine2.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+[1.205s] copying /home/harry/aaa/build/term_project/build/lib/term_project/__init__.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+[1.205s] copying /home/harry/aaa/build/term_project/build/lib/term_project/test_machine3.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+[1.205s] copying /home/harry/aaa/build/term_project/build/lib/term_project/robot.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+[1.205s] copying /home/harry/aaa/build/term_project/build/lib/term_project/kiosk_service.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+[1.205s] copying /home/harry/aaa/build/term_project/build/lib/term_project/kiosk_action.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+[1.205s] copying /home/harry/aaa/build/term_project/build/lib/term_project/robot_sub.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+[1.205s] copying /home/harry/aaa/build/term_project/build/lib/term_project/machine3.py -> /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project
+[1.205s] byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/machine2.py to machine2.cpython-310.pyc
+[1.206s] byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/__init__.py to __init__.cpython-310.pyc
+[1.206s] byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/test_machine3.py to test_machine3.cpython-310.pyc
+[1.207s] byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/robot.py to robot.cpython-310.pyc
+[1.208s] byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/kiosk_service.py to kiosk_service.cpython-310.pyc
+[1.208s] byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/kiosk_action.py to kiosk_action.cpython-310.pyc
+[1.208s] byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/robot_sub.py to robot_sub.cpython-310.pyc
+[1.209s] byte-compiling /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/machine3.py to machine3.cpython-310.pyc
+[1.209s] running install_data
+[1.210s] creating /home/harry/aaa/install/term_project/share/ament_index
+[1.210s] creating /home/harry/aaa/install/term_project/share/ament_index/resource_index
+[1.210s] creating /home/harry/aaa/install/term_project/share/ament_index/resource_index/packages
+[1.210s] copying resource/term_project -> /home/harry/aaa/install/term_project/share/ament_index/resource_index/packages
+[1.210s] copying package.xml -> /home/harry/aaa/install/term_project/share/term_project
+[1.210s] running install_egg_info
+[1.211s] Copying ../../build/term_project/term_project.egg-info to /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project-0.0.0-py3.10.egg-info
+[1.212s] running install_scripts
+[1.229s] Installing kiosk_action script to /home/harry/aaa/install/term_project/lib/term_project
+[1.229s] Installing kiosk_service script to /home/harry/aaa/install/term_project/lib/term_project
+[1.229s] Installing machine2 script to /home/harry/aaa/install/term_project/lib/term_project
+[1.229s] Installing machine3 script to /home/harry/aaa/install/term_project/lib/term_project
+[1.230s] Installing robot script to /home/harry/aaa/install/term_project/lib/term_project
+[1.230s] Installing robot_sub script to /home/harry/aaa/install/term_project/lib/term_project
+[1.230s] Installing test script to /home/harry/aaa/install/term_project/lib/term_project
+[1.230s] writing list of installed files to '/home/harry/aaa/build/term_project/install.log'
+[1.248s] Invoked command in '/home/harry/aaa/src/term_project' returned '0': AMENT_PREFIX_PATH=/home/harry/aaa/install/my_custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/harry/aaa/install/my_custom_interface:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/harry/aaa/install/my_custom_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/harry/aaa/build/term_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harry/aaa/install/term_project/lib/python3.10/site-packages:/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/term_project build --build-base /home/harry/aaa/build/term_project/build install --record /home/harry/aaa/build/term_project/install.log --single-version-externally-managed install_data

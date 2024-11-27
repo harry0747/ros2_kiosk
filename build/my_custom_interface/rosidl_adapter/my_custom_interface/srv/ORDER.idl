@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_custom_interface/srv/ORDER.srv
+// generated code does not contain a copyright notice
+
+
+module my_custom_interface {
+  module srv {
+    struct ORDER_Request {
+      int8 chocolate;
+
+      int8 mint;
+
+      int8 strawberry;
+
+      int8 table_number;
+    };
+    struct ORDER_Response {
+      int8 answer;
+    };
+  };
+};

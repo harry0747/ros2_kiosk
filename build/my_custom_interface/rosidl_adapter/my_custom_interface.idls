@@ -1,0 +1,10 @@
+/home/harry/aaa/build/my_custom_interface/rosidl_adapter/my_custom_interface:srv/ABC.idl
+/home/harry/aaa/build/my_custom_interface/rosidl_adapter/my_custom_interface:srv/ROTATEHOME.idl
+/home/harry/aaa/build/my_custom_interface/rosidl_adapter/my_custom_interface:srv/TwoStringService.idl
+/home/harry/aaa/build/my_custom_interface/rosidl_adapter/my_custom_interface:srv/COMPLETE.idl
+/home/harry/aaa/build/my_custom_interface/rosidl_adapter/my_custom_interface:srv/DRIVE.idl
+/home/harry/aaa/build/my_custom_interface/rosidl_adapter/my_custom_interface:srv/ORDER.idl
+/home/harry/aaa/build/my_custom_interface/rosidl_adapter/my_custom_interface:srv/ORDERR.idl
+/home/harry/aaa/build/my_custom_interface/rosidl_adapter/my_custom_interface:action/Calculator.idl
+/home/harry/aaa/build/my_custom_interface/rosidl_adapter/my_custom_interface:action/Cal.idl
+/home/harry/aaa/build/my_custom_interface/rosidl_adapter/my_custom_interface:action/COME.idl

@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_custom_interface/srv/COMPLETE.srv
+// generated code does not contain a copyright notice
+
+
+module my_custom_interface {
+  module srv {
+    struct COMPLETE_Request {
+      string a;
+    };
+    struct COMPLETE_Response {
+      string good;
+    };
+  };
+};

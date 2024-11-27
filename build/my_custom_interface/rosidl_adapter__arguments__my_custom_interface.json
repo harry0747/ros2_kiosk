@@ -1,0 +1,15 @@
+{
+  "package_name": "my_custom_interface",
+  "non_idl_tuples": [
+    "/home/harry/aaa/src/my_custom_interface:srv/ABC.srv",
+    "/home/harry/aaa/src/my_custom_interface:srv/ROTATEHOME.srv",
+    "/home/harry/aaa/src/my_custom_interface:srv/TwoStringService.srv",
+    "/home/harry/aaa/src/my_custom_interface:srv/COMPLETE.srv",
+    "/home/harry/aaa/src/my_custom_interface:srv/DRIVE.srv",
+    "/home/harry/aaa/src/my_custom_interface:srv/ORDER.srv",
+    "/home/harry/aaa/src/my_custom_interface:srv/ORDERR.srv",
+    "/home/harry/aaa/src/my_custom_interface:action/Calculator.action",
+    "/home/harry/aaa/src/my_custom_interface:action/Cal.action",
+    "/home/harry/aaa/src/my_custom_interface:action/COME.action"
+  ]
+}

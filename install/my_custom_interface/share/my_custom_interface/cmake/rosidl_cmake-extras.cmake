@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(my_custom_interface_IDL_FILES "srv/ABC.idl;srv/ROTATEHOME.idl;srv/TwoStringService.idl;srv/COMPLETE.idl;srv/DRIVE.idl;srv/ORDER.idl;srv/ORDERR.idl;action/Calculator.idl;action/Cal.idl;action/COME.idl")
+set(my_custom_interface_INTERFACE_FILES "srv/ABC.srv;srv/ABC_Request.msg;srv/ABC_Response.msg;srv/ROTATEHOME.srv;srv/ROTATEHOME_Request.msg;srv/ROTATEHOME_Response.msg;srv/TwoStringService.srv;srv/TwoStringService_Request.msg;srv/TwoStringService_Response.msg;srv/COMPLETE.srv;srv/COMPLETE_Request.msg;srv/COMPLETE_Response.msg;srv/DRIVE.srv;srv/DRIVE_Request.msg;srv/DRIVE_Response.msg;srv/ORDER.srv;srv/ORDER_Request.msg;srv/ORDER_Response.msg;srv/ORDERR.srv;srv/ORDERR_Request.msg;srv/ORDERR_Response.msg;action/Calculator.action;action/Cal.action;action/COME.action")

@@ -1,0 +1,7 @@
+int8 num_a
+int8 num_b
+string op
+---
+int64 answer
+---
+int8 loading_count

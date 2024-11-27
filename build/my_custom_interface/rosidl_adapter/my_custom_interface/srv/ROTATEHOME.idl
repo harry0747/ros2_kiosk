@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_custom_interface/srv/ROTATEHOME.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/PointCloud2.idl"
+#include "std_msgs/msg/Float32.idl"
+
+module my_custom_interface {
+  module srv {
+    struct ROTATEHOME_Request {
+      std_msgs::msg::Float32 a;
+    };
+    struct ROTATEHOME_Response {
+      sensor_msgs::msg::PointCloud2 b;
+    };
+  };
+};

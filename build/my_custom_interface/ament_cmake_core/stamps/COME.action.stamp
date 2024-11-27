@@ -1,0 +1,6 @@
+string command
+int8 table_number
+---
+string arrive
+---
+string check

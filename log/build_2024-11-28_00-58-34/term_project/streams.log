@@ -1,0 +1,27 @@
+[0.606s] Invoking command in '/home/harry/aaa/src/term_project': PYTHONPATH=/home/harry/aaa/build/term_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harry/aaa/install/term_project/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/term_project build --build-base /home/harry/aaa/build/term_project/build install --record /home/harry/aaa/build/term_project/install.log --single-version-externally-managed install_data
+[0.857s] running egg_info
+[0.857s] writing ../../build/term_project/term_project.egg-info/PKG-INFO
+[0.857s] writing dependency_links to ../../build/term_project/term_project.egg-info/dependency_links.txt
+[0.858s] writing entry points to ../../build/term_project/term_project.egg-info/entry_points.txt
+[0.858s] writing requirements to ../../build/term_project/term_project.egg-info/requires.txt
+[0.858s] writing top-level names to ../../build/term_project/term_project.egg-info/top_level.txt
+[0.859s] reading manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'
+[0.860s] writing manifest file '../../build/term_project/term_project.egg-info/SOURCES.txt'
+[0.860s] running build
+[0.860s] running build_py
+[0.861s] running install
+[0.861s] running install_lib
+[0.862s] running install_data
+[0.862s] running install_egg_info
+[0.863s] removing '/home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project-0.0.0-py3.10.egg-info' (and everything under it)
+[0.864s] Copying ../../build/term_project/term_project.egg-info to /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project-0.0.0-py3.10.egg-info
+[0.864s] running install_scripts
+[0.881s] Installing kiosk_action script to /home/harry/aaa/install/term_project/lib/term_project
+[0.881s] Installing kiosk_service script to /home/harry/aaa/install/term_project/lib/term_project
+[0.881s] Installing machine2 script to /home/harry/aaa/install/term_project/lib/term_project
+[0.881s] Installing machine3 script to /home/harry/aaa/install/term_project/lib/term_project
+[0.881s] Installing robot script to /home/harry/aaa/install/term_project/lib/term_project
+[0.881s] Installing robot_sub script to /home/harry/aaa/install/term_project/lib/term_project
+[0.881s] Installing test script to /home/harry/aaa/install/term_project/lib/term_project
+[0.882s] writing list of installed files to '/home/harry/aaa/build/term_project/install.log'
+[0.898s] Invoked command in '/home/harry/aaa/src/term_project' returned '0': PYTHONPATH=/home/harry/aaa/build/term_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harry/aaa/install/term_project/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/term_project build --build-base /home/harry/aaa/build/term_project/build install --record /home/harry/aaa/build/term_project/install.log --single-version-externally-managed install_data

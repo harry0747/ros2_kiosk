@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>free-icon-table-8015427.png</file>
+    <file>free-icon-map-395003.png</file>
+    <file>Screenshot from 2024-07-04 10-28-03.png</file>
+    <file>free-icon-automate-6086806.png</file>
+    <file>ARIS.png</file>
+    <file>충전스테이션.png</file>
+    <file>free-icon-log-in-1176390.png</file>
+    <file>키오스크_정면.png</file>
+  </qresource>
+</RCC>

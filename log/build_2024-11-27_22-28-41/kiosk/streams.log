@@ -1,0 +1,71 @@
+[0.843s] Invoking command in '/home/harry/aaa/src/kiosk': PYTHONPATH=/home/harry/aaa/build/kiosk/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harry/aaa/install/kiosk/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kiosk build --build-base /home/harry/aaa/build/kiosk/build install --record /home/harry/aaa/build/kiosk/install.log --single-version-externally-managed install_data
+[1.085s] running egg_info
+[1.086s] writing ../../build/kiosk/kiosk.egg-info/PKG-INFO
+[1.086s] writing dependency_links to ../../build/kiosk/kiosk.egg-info/dependency_links.txt
+[1.086s] writing entry points to ../../build/kiosk/kiosk.egg-info/entry_points.txt
+[1.086s] writing requirements to ../../build/kiosk/kiosk.egg-info/requires.txt
+[1.086s] writing top-level names to ../../build/kiosk/kiosk.egg-info/top_level.txt
+[1.088s] reading manifest file '../../build/kiosk/kiosk.egg-info/SOURCES.txt'
+[1.089s] writing manifest file '../../build/kiosk/kiosk.egg-info/SOURCES.txt'
+[1.090s] running build
+[1.090s] running build_py
+[1.090s] running install
+[1.090s] running install_lib
+[1.092s] running install_data
+[1.092s] creating /home/harry/aaa/install/kiosk/share/kiosk/data
+[1.092s] creating /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.092s] copying data/images/ARIS.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.092s] copying data/images/free-icon-automate-6086806.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.092s] copying data/images/free-icon-bar-6028207.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.093s] copying data/images/free-icon-hand-cursor-5781782.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.093s] copying data/images/free-icon-ice-cream-8357743.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.093s] copying data/images/free-icon-log-in-1176390.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.093s] copying data/images/free-icon-map-395003.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.093s] copying data/images/free-icon-plug-10396335.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.093s] copying data/images/free-icon-table-8015427.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.093s] copying data/images/free-icon-takeaway-7770713.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.093s] copying data/images/free-icon-turkey-12694430.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.093s] copying data/images/free-icon-wall-698633.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.094s] copying data/images/KIOSK.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.094s] copying data/images/충전스테이션.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.094s] copying data/images/키오스크_정면.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.094s] copying data/images/Screenshot from 2024-07-04 10-28-03.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.094s] copying data/images/Screenshot from 2024-07-04 10-57-05.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.095s] copying data/images/Screenshot from 2024-07-04 12-05-16.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.095s] copying data/images/Screenshot_from_2024-07-04_12-19-44-removebg-preview.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.095s] copying data/images/Screenshot_from_2024-07-04_12-20-02-removebg-preview.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.095s] copying data/images/Screenshot_from_2024-07-04_12-20-15-removebg-preview.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.095s] copying data/images/Screenshot_from_2024-07-04_13-20-28-removebg-preview.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.096s] copying data/images/Screenshot_from_2024-07-04_13-20-51-removebg-preview.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.096s] copying data/images/Screenshot_from_2024-07-04_13-21-06-removebg-preview.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.096s] copying data/images/Screenshot_from_2024-07-04_13-22-28-removebg-preview.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.096s] copying data/images/Screenshot_from_2024-07-04_13-22-43-removebg-preview.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.096s] copying data/images/Screenshot_from_2024-07-04_13-22-47-removebg-preview.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.096s] copying data/images/Screenshot from 2024-07-04 13-40-02.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.096s] copying data/images/Screenshot_from_2024-07-04_14-18-45-removebg-preview (1).png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.096s] copying data/images/Screenshot from 2024-08-21 11-51-51.png -> /home/harry/aaa/install/kiosk/share/kiosk/data/images
+[1.096s] creating /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/flavor.ui -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/info.ui -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/main.ui -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/receive.ui -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/recive.ui -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/resource_pay.qrc -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/resource.qrc -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/resource_recive.qrc -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/resource_serve.qrc -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/resource_table.qrc -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/resource_topping.qrc -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/resourece_order.qrc -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.097s] copying data/ui/serve.ui -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.098s] copying data/ui/table.ui -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.098s] copying data/ui/topping.ui -> /home/harry/aaa/install/kiosk/share/kiosk/data/ui
+[1.098s] running install_egg_info
+[1.099s] removing '/home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk-0.0.0-py3.10.egg-info' (and everything under it)
+[1.099s] Copying ../../build/kiosk/kiosk.egg-info to /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk-0.0.0-py3.10.egg-info
+[1.100s] running install_scripts
+[1.117s] Installing kiosk_gui script to /home/harry/aaa/install/kiosk/lib/kiosk
+[1.117s] Installing test script to /home/harry/aaa/install/kiosk/lib/kiosk
+[1.117s] Installing test2 script to /home/harry/aaa/install/kiosk/lib/kiosk
+[1.118s] writing list of installed files to '/home/harry/aaa/build/kiosk/install.log'
+[1.139s] Invoked command in '/home/harry/aaa/src/kiosk' returned '0': PYTHONPATH=/home/harry/aaa/build/kiosk/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harry/aaa/install/kiosk/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kiosk build --build-base /home/harry/aaa/build/kiosk/build install --record /home/harry/aaa/build/kiosk/install.log --single-version-externally-managed install_data

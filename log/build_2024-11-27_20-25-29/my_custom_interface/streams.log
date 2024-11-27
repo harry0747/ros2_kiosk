@@ -1,0 +1,554 @@
+[0.011s] Invoking command in '/home/harry/aaa/build/my_custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/harry/a/install/term_project:/opt/ros/humble /home/harry/.local/bin/cmake /home/harry/aaa/src/my_custom_interface -DCMAKE_INSTALL_PREFIX=/home/harry/aaa/install/my_custom_interface
+[0.101s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.101s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.101s]   CMake.
+[0.101s] 
+[0.101s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.101s]   CMake that the project does not need compatibility with older versions.
+[0.101s] 
+[0.101s] [0m
+[0.239s] -- The C compiler identification is GNU 11.4.0
+[0.355s] -- The CXX compiler identification is GNU 11.4.0
+[0.366s] -- Detecting C compiler ABI info
+[0.429s] -- Detecting C compiler ABI info - done
+[0.445s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.446s] -- Detecting C compile features
+[0.446s] -- Detecting C compile features - done
+[0.458s] -- Detecting CXX compiler ABI info
+[0.523s] -- Detecting CXX compiler ABI info - done
+[0.539s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.539s] -- Detecting CXX compile features
+[0.540s] -- Detecting CXX compile features - done
+[0.555s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.678s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.774s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.779s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.789s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.857s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.906s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.950s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.572s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.128s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.819s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.822s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[2.823s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.823s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.823s]   the cmake_policy command to set the policy and suppress this warning.
+[2.823s] 
+[2.823s] Call Stack (most recent call first):
+[2.823s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.823s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.823s]   CMakeLists.txt:34 (rosidl_generate_interfaces)
+[2.823s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.823s] [0m
+[2.843s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[2.846s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.846s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[2.847s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.847s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.847s]   the cmake_policy command to set the policy and suppress this warning.
+[2.847s] 
+[2.847s] Call Stack (most recent call first):
+[2.847s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.847s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.847s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.847s]   CMakeLists.txt:34 (rosidl_generate_interfaces)
+[2.847s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.847s] [0m
+[2.866s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[2.866s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.866s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.866s]   the cmake_policy command to set the policy and suppress this warning.
+[2.866s] 
+[2.866s] Call Stack (most recent call first):
+[2.866s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.866s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.866s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.866s]   CMakeLists.txt:34 (rosidl_generate_interfaces)
+[2.866s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.866s] [0m
+[2.873s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[2.873s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.873s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.873s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.892s] -- Found PythonExtra: .so
+[2.989s] -- Configuring done (2.9s)
+[3.054s] -- Generating done (0.1s)
+[3.065s] -- Build files have been written to: /home/harry/aaa/build/my_custom_interface
+[3.074s] Invoked command in '/home/harry/aaa/build/my_custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/harry/a/install/term_project:/opt/ros/humble /home/harry/.local/bin/cmake /home/harry/aaa/src/my_custom_interface -DCMAKE_INSTALL_PREFIX=/home/harry/aaa/install/my_custom_interface
+[3.076s] Invoking command in '/home/harry/aaa/build/my_custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/harry/a/install/term_project:/opt/ros/humble /home/harry/.local/bin/cmake --build /home/harry/aaa/build/my_custom_interface -- -j12 -l12
+[3.166s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.171s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.173s] [  1%] Built target ament_cmake_python_copy_my_custom_interface
+[3.466s] running egg_info
+[3.466s] creating my_custom_interface.egg-info
+[3.466s] writing my_custom_interface.egg-info/PKG-INFO
+[3.467s] writing dependency_links to my_custom_interface.egg-info/dependency_links.txt
+[3.467s] writing top-level names to my_custom_interface.egg-info/top_level.txt
+[3.467s] writing manifest file 'my_custom_interface.egg-info/SOURCES.txt'
+[3.469s] reading manifest file 'my_custom_interface.egg-info/SOURCES.txt'
+[3.470s] writing manifest file 'my_custom_interface.egg-info/SOURCES.txt'
+[3.490s] [  1%] Built target ament_cmake_python_build_my_custom_interface_egg
+[4.487s] [  1%] Built target my_custom_interface__cpp
+[4.492s] [  2%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.492s] [  3%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.493s] [  4%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.576s] [  6%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/abc__functions.c.o[0m
+[4.577s] [  6%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/rotatehome__functions.c.o[0m
+[4.578s] [  7%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/two_string_service__functions.c.o[0m
+[4.578s] [  9%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/drive__functions.c.o[0m
+[4.578s] [ 10%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/order__functions.c.o[0m
+[4.578s] [ 11%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/orderr__functions.c.o[0m
+[4.578s] [  8%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/srv/detail/complete__functions.c.o[0m
+[4.578s] [ 12%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/action/detail/calculator__functions.c.o[0m
+[4.579s] [ 13%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/action/detail/cal__functions.c.o[0m
+[4.691s] [ 14%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_c.dir/rosidl_generator_c/my_custom_interface/action/detail/come__functions.c.o[0m
+[4.860s] [ 15%] [32m[1mLinking C shared library libmy_custom_interface__rosidl_generator_c.so[0m
+[4.899s] [ 15%] Built target my_custom_interface__rosidl_generator_c
+[4.905s] [ 16%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.906s] [ 17%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.907s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.278s] [ 19%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/abc__type_support.cpp.o[0m
+[5.279s] [ 20%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/rotatehome__type_support.cpp.o[0m
+[5.279s] [ 21%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/two_string_service__type_support.cpp.o[0m
+[5.279s] [ 22%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/complete__type_support.cpp.o[0m
+[5.279s] [ 23%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/drive__type_support.cpp.o[0m
+[5.281s] [ 24%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/order__type_support.cpp.o[0m
+[5.282s] [ 25%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/srv/orderr__type_support.cpp.o[0m
+[5.984s] [ 26%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/action/calculator__type_support.cpp.o[0m
+[5.989s] [ 27%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/action/cal__type_support.cpp.o[0m
+[5.992s] [ 28%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_custom_interface/action/come__type_support.cpp.o[0m
+[6.015s] [ 30%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/abc__type_support.cpp.o[0m
+[6.015s] [ 30%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/rotatehome__type_support.cpp.o[0m
+[6.018s] [ 31%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/two_string_service__type_support.cpp.o[0m
+[6.018s] [ 32%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/complete__type_support.cpp.o[0m
+[6.042s] [ 33%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/drive__type_support.cpp.o[0m
+[6.151s] [ 34%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/abc__type_support.cpp.o[0m
+[6.222s] [ 35%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/rotatehome__type_support.cpp.o[0m
+[6.326s] [ 36%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/two_string_service__type_support.cpp.o[0m
+[6.423s] [ 37%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/complete__type_support.cpp.o[0m
+[6.508s] [ 38%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/drive__type_support.cpp.o[0m
+[6.570s] [ 39%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/order__type_support.cpp.o[0m
+[6.671s] [ 40%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/srv/orderr__type_support.cpp.o[0m
+[6.792s] [ 41%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/action/calculator__type_support.cpp.o[0m
+[6.812s] [ 42%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/order__type_support.cpp.o[0m
+[6.820s] [ 43%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/srv/detail/orderr__type_support.cpp.o[0m
+[6.825s] [ 44%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/action/detail/calculator__type_support.cpp.o[0m
+[6.834s] [ 45%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/action/detail/cal__type_support.cpp.o[0m
+[6.883s] [ 45%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/action/cal__type_support.cpp.o[0m
+[6.916s] [ 46%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_custom_interface/action/detail/come__type_support.cpp.o[0m
+[6.933s] [ 47%] [32m[1mLinking CXX shared library libmy_custom_interface__rosidl_typesupport_cpp.so[0m
+[6.933s] [ 48%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_custom_interface/action/come__type_support.cpp.o[0m
+[6.937s] [ 49%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/abc__type_support.cpp.o[0m
+[6.937s] [ 50%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/rotatehome__type_support.cpp.o[0m
+[6.975s] [ 50%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/two_string_service__type_support.cpp.o[0m
+[7.018s] [ 51%] [32m[1mLinking CXX shared library libmy_custom_interface__rosidl_typesupport_c.so[0m
+[7.072s] [ 51%] Built target my_custom_interface__rosidl_typesupport_cpp
+[7.083s] [ 52%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/complete__type_support.cpp.o[0m
+[7.114s] [ 52%] Built target my_custom_interface__rosidl_typesupport_c
+[7.120s] [ 53%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/drive__type_support.cpp.o[0m
+[7.207s] [ 54%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/abc__type_support.c.o[0m
+[7.272s] [ 55%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/rotatehome__type_support.c.o[0m
+[7.304s] [ 56%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/abc__type_support_c.cpp.o[0m
+[7.366s] [ 57%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/two_string_service__type_support.c.o[0m
+[7.425s] [ 58%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/complete__type_support.c.o[0m
+[7.518s] [ 59%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/drive__type_support.c.o[0m
+[7.622s] [ 60%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/order__type_support.c.o[0m
+[7.665s] [ 61%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/rotatehome__type_support_c.cpp.o[0m
+[7.674s] [ 62%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/order__type_support.cpp.o[0m
+[7.733s] [ 63%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/srv/detail/orderr__type_support.c.o[0m
+[7.827s] [ 66%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/action/detail/dds_fastrtps/calculator__type_support.cpp.o[0m
+[7.827s] [ 66%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/srv/detail/dds_fastrtps/orderr__type_support.cpp.o[0m
+[7.827s] [ 66%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/action/detail/calculator__type_support.c.o[0m
+[7.869s] [ 67%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/action/detail/dds_fastrtps/cal__type_support.cpp.o[0m
+[7.932s] [ 68%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/action/detail/cal__type_support.c.o[0m
+[7.936s] [ 69%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/two_string_service__type_support_c.cpp.o[0m
+[8.008s] [ 70%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/complete__type_support_c.cpp.o[0m
+[8.020s] [ 71%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_custom_interface/action/detail/dds_fastrtps/come__type_support.cpp.o[0m
+[8.020s] [ 72%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_custom_interface/action/detail/come__type_support.c.o[0m
+[8.050s] [ 73%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/drive__type_support_c.cpp.o[0m
+[8.051s] [ 74%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/order__type_support_c.cpp.o[0m
+[8.098s] [ 75%] [32m[1mLinking CXX shared library libmy_custom_interface__rosidl_typesupport_introspection_cpp.so[0m
+[8.111s] [ 76%] [32m[1mLinking C shared library libmy_custom_interface__rosidl_typesupport_introspection_c.so[0m
+[8.222s] [ 76%] Built target my_custom_interface__rosidl_typesupport_introspection_c
+[8.235s] [ 77%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/srv/detail/orderr__type_support_c.cpp.o[0m
+[8.386s] [ 77%] Built target my_custom_interface__rosidl_typesupport_introspection_cpp
+[8.396s] [ 78%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/action/detail/calculator__type_support_c.cpp.o[0m
+[8.410s] [ 79%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/action/detail/cal__type_support_c.cpp.o[0m
+[8.624s] [ 80%] [32mBuilding CXX object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_custom_interface/action/detail/come__type_support_c.cpp.o[0m
+[9.022s] [ 81%] [32m[1mLinking CXX shared library libmy_custom_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[9.115s] [ 81%] Built target my_custom_interface__rosidl_typesupport_fastrtps_cpp
+[9.133s] [ 82%] [32m[1mLinking CXX shared library libmy_custom_interface__rosidl_typesupport_fastrtps_c.so[0m
+[9.207s] [ 82%] Built target my_custom_interface__rosidl_typesupport_fastrtps_c
+[9.224s] [ 82%] Built target my_custom_interface
+[9.235s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[11.931s] [ 83%] Built target my_custom_interface__py
+[11.941s] [ 84%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_abc_s.c.o[0m
+[11.941s] [ 86%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_two_string_service_s.c.o[0m
+[11.941s] [ 86%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_rotatehome_s.c.o[0m
+[11.941s] [ 87%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_complete_s.c.o[0m
+[11.942s] [ 88%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_drive_s.c.o[0m
+[11.942s] [ 89%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_order_s.c.o[0m
+[11.943s] [ 90%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/srv/_orderr_s.c.o[0m
+[11.943s] [ 91%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/action/_calculator_s.c.o[0m
+[11.943s] [ 92%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/action/_cal_s.c.o[0m
+[11.943s] [ 93%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_generator_py.dir/rosidl_generator_py/my_custom_interface/action/_come_s.c.o[0m
+[12.197s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/my_custom_interface/libmy_custom_interface__rosidl_generator_py.so[0m
+[12.237s] [ 94%] Built target my_custom_interface__rosidl_generator_py
+[12.246s] [ 95%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[12.246s] [ 96%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[12.246s] [ 97%] [32mBuilding C object CMakeFiles/my_custom_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[12.466s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_custom_interface/my_custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.467s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_custom_interface/my_custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.467s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_custom_interface/my_custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.512s] [100%] Built target my_custom_interface__rosidl_typesupport_c__pyext
+[12.512s] [100%] Built target my_custom_interface__rosidl_typesupport_fastrtps_c__pyext
+[12.512s] [100%] Built target my_custom_interface__rosidl_typesupport_introspection_c__pyext
+[12.520s] Invoked command in '/home/harry/aaa/build/my_custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/harry/a/install/term_project:/opt/ros/humble /home/harry/.local/bin/cmake --build /home/harry/aaa/build/my_custom_interface -- -j12 -l12
+[12.607s] Invoking command in '/home/harry/aaa/build/my_custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/harry/a/install/term_project:/opt/ros/humble /home/harry/.local/bin/cmake --install /home/harry/aaa/build/my_custom_interface
+[12.678s] -- Install configuration: ""
+[12.679s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/ament_index/resource_index/rosidl_interfaces/my_custom_interface
+[12.679s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface
+[12.679s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action
+[12.679s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/cal.h
+[12.679s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/calculator.h
+[12.679s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail
+[12.680s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__functions.c
+[12.680s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__functions.c
+[12.680s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__struct.h
+[12.680s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__functions.h
+[12.680s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__type_support.h
+[12.680s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__functions.h
+[12.680s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__type_support.h
+[12.680s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__struct.h
+[12.681s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__struct.h
+[12.681s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__type_support.h
+[12.681s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__functions.h
+[12.681s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__functions.c
+[12.681s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/come.h
+[12.681s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv
+[12.681s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/order.h
+[12.681s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/abc.h
+[12.681s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/complete.h
+[12.682s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/orderr.h
+[12.682s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail
+[12.682s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__struct.h
+[12.682s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__functions.c
+[12.682s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__type_support.h
+[12.682s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__functions.c
+[12.682s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__functions.h
+[12.682s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__functions.c
+[12.683s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__functions.h
+[12.683s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__functions.h
+[12.683s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__type_support.h
+[12.683s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__functions.h
+[12.683s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__type_support.h
+[12.683s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__type_support.h
+[12.683s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__functions.c
+[12.683s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__functions.c
+[12.684s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__type_support.h
+[12.684s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__type_support.h
+[12.684s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__functions.h
+[12.684s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__functions.c
+[12.684s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__functions.h
+[12.684s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__struct.h
+[12.684s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__struct.h
+[12.684s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__functions.h
+[12.685s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__struct.h
+[12.685s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__type_support.h
+[12.685s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__struct.h
+[12.685s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__struct.h
+[12.685s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__functions.c
+[12.685s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__struct.h
+[12.685s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/two_string_service.h
+[12.685s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/drive.h
+[12.685s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/rotatehome.h
+[12.686s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg
+[12.686s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg/rosidl_generator_c__visibility_control.h
+[12.686s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/library_path.sh
+[12.686s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/library_path.dsv
+[12.686s] -- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_generator_c.so
+[12.687s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_generator_c.so" to ""
+[12.687s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface
+[12.687s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action
+[12.687s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail
+[12.687s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__rosidl_typesupport_fastrtps_c.h
+[12.687s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__rosidl_typesupport_fastrtps_c.h
+[12.687s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__rosidl_typesupport_fastrtps_c.h
+[12.687s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv
+[12.688s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail
+[12.688s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__rosidl_typesupport_fastrtps_c.h
+[12.688s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__rosidl_typesupport_fastrtps_c.h
+[12.688s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__rosidl_typesupport_fastrtps_c.h
+[12.688s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__rosidl_typesupport_fastrtps_c.h
+[12.688s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__rosidl_typesupport_fastrtps_c.h
+[12.688s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__rosidl_typesupport_fastrtps_c.h
+[12.688s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__rosidl_typesupport_fastrtps_c.h
+[12.689s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg
+[12.689s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.689s] -- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_fastrtps_c.so
+[12.689s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[12.689s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface
+[12.689s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action
+[12.689s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail
+[12.689s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__type_support.c
+[12.689s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__rosidl_typesupport_introspection_c.h
+[12.690s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__rosidl_typesupport_introspection_c.h
+[12.690s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__type_support.c
+[12.690s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__rosidl_typesupport_introspection_c.h
+[12.690s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__type_support.c
+[12.690s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv
+[12.690s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail
+[12.690s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__type_support.c
+[12.690s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__rosidl_typesupport_introspection_c.h
+[12.691s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__type_support.c
+[12.691s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__type_support.c
+[12.691s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__type_support.c
+[12.691s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__rosidl_typesupport_introspection_c.h
+[12.691s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__type_support.c
+[12.691s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__rosidl_typesupport_introspection_c.h
+[12.691s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__rosidl_typesupport_introspection_c.h
+[12.691s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__rosidl_typesupport_introspection_c.h
+[12.692s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__rosidl_typesupport_introspection_c.h
+[12.692s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__type_support.c
+[12.692s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__type_support.c
+[12.692s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__rosidl_typesupport_introspection_c.h
+[12.692s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg
+[12.692s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.692s] -- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_introspection_c.so
+[12.692s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_introspection_c.so" to ""
+[12.693s] -- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_c.so
+[12.693s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_c.so" to ""
+[12.693s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface
+[12.693s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action
+[12.693s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/come.hpp
+[12.693s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail
+[12.693s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__struct.hpp
+[12.693s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__builder.hpp
+[12.693s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__struct.hpp
+[12.694s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__traits.hpp
+[12.694s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__builder.hpp
+[12.694s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__traits.hpp
+[12.694s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__traits.hpp
+[12.694s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__builder.hpp
+[12.694s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__struct.hpp
+[12.694s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/cal.hpp
+[12.694s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/calculator.hpp
+[12.695s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv
+[12.695s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/two_string_service.hpp
+[12.695s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/drive.hpp
+[12.695s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/orderr.hpp
+[12.695s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/complete.hpp
+[12.695s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/abc.hpp
+[12.695s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail
+[12.695s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__builder.hpp
+[12.696s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__struct.hpp
+[12.696s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__traits.hpp
+[12.696s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__struct.hpp
+[12.696s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__struct.hpp
+[12.696s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__builder.hpp
+[12.696s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__builder.hpp
+[12.696s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__traits.hpp
+[12.696s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__builder.hpp
+[12.697s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__struct.hpp
+[12.697s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__traits.hpp
+[12.697s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__struct.hpp
+[12.697s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__struct.hpp
+[12.697s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__traits.hpp
+[12.697s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__struct.hpp
+[12.697s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__builder.hpp
+[12.697s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__traits.hpp
+[12.698s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__traits.hpp
+[12.698s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__builder.hpp
+[12.698s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__traits.hpp
+[12.698s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__builder.hpp
+[12.698s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/rotatehome.hpp
+[12.698s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/order.hpp
+[12.698s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface
+[12.698s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action
+[12.698s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail
+[12.699s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__rosidl_typesupport_fastrtps_cpp.hpp
+[12.699s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__rosidl_typesupport_fastrtps_cpp.hpp
+[12.699s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__rosidl_typesupport_fastrtps_cpp.hpp
+[12.699s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/dds_fastrtps
+[12.699s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv
+[12.699s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail
+[12.699s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__rosidl_typesupport_fastrtps_cpp.hpp
+[12.699s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__rosidl_typesupport_fastrtps_cpp.hpp
+[12.700s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__rosidl_typesupport_fastrtps_cpp.hpp
+[12.700s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__rosidl_typesupport_fastrtps_cpp.hpp
+[12.700s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__rosidl_typesupport_fastrtps_cpp.hpp
+[12.700s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/dds_fastrtps
+[12.700s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__rosidl_typesupport_fastrtps_cpp.hpp
+[12.700s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__rosidl_typesupport_fastrtps_cpp.hpp
+[12.700s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg
+[12.700s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.701s] -- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_fastrtps_cpp.so
+[12.701s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.701s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface
+[12.701s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action
+[12.701s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail
+[12.701s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__rosidl_typesupport_introspection_cpp.hpp
+[12.701s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__type_support.cpp
+[12.701s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__rosidl_typesupport_introspection_cpp.hpp
+[12.701s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/come__type_support.cpp
+[12.702s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/cal__type_support.cpp
+[12.702s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/action/detail/calculator__rosidl_typesupport_introspection_cpp.hpp
+[12.702s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv
+[12.702s] -- Up-to-date: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail
+[12.702s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__type_support.cpp
+[12.702s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__rosidl_typesupport_introspection_cpp.hpp
+[12.702s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__type_support.cpp
+[12.702s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__type_support.cpp
+[12.703s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/complete__rosidl_typesupport_introspection_cpp.hpp
+[12.703s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__type_support.cpp
+[12.703s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__rosidl_typesupport_introspection_cpp.hpp
+[12.703s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/orderr__rosidl_typesupport_introspection_cpp.hpp
+[12.703s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/two_string_service__rosidl_typesupport_introspection_cpp.hpp
+[12.703s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/order__type_support.cpp
+[12.703s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__type_support.cpp
+[12.703s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/drive__rosidl_typesupport_introspection_cpp.hpp
+[12.703s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/abc__rosidl_typesupport_introspection_cpp.hpp
+[12.704s] -- Installing: /home/harry/aaa/install/my_custom_interface/include/my_custom_interface/my_custom_interface/srv/detail/rotatehome__type_support.cpp
+[12.704s] -- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_introspection_cpp.so
+[12.704s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[12.704s] -- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_cpp.so
+[12.704s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_typesupport_cpp.so" to ""
+[12.704s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/pythonpath.sh
+[12.704s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/pythonpath.dsv
+[12.704s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface-0.0.0-py3.10.egg-info
+[12.705s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface-0.0.0-py3.10.egg-info/top_level.txt
+[12.705s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[12.705s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[12.705s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[12.705s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface
+[12.705s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.705s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/__init__.py
+[12.706s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action
+[12.706s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/__init__.py
+[12.706s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_come_s.c
+[12.706s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_cal.py
+[12.706s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_come.py
+[12.706s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_calculator.py
+[12.706s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_cal_s.c
+[12.706s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_calculator_s.c
+[12.707s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/libmy_custom_interface__rosidl_generator_py.so
+[12.707s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv
+[12.707s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_two_string_service_s.c
+[12.707s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_complete.py
+[12.707s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/__init__.py
+[12.707s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_drive.py
+[12.707s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_complete_s.c
+[12.707s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_order.py
+[12.708s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_abc_s.c
+[12.708s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_drive_s.c
+[12.708s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_orderr.py
+[12.708s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_two_string_service.py
+[12.708s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_rotatehome_s.c
+[12.708s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_rotatehome.py
+[12.708s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_abc.py
+[12.708s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_order_s.c
+[12.708s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_orderr_s.c
+[12.709s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.709s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_c.c
+[12.709s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_introspection_c.c
+[12.709s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/_my_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.709s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.761s] Listing '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface'...
+[12.761s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/__init__.py'...
+[12.761s] Listing '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action'...
+[12.761s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/__init__.py'...
+[12.761s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_cal.py'...
+[12.761s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_calculator.py'...
+[12.761s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/action/_come.py'...
+[12.761s] Listing '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv'...
+[12.762s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/__init__.py'...
+[12.762s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_abc.py'...
+[12.762s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_complete.py'...
+[12.762s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_drive.py'...
+[12.762s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_order.py'...
+[12.762s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_orderr.py'...
+[12.762s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_rotatehome.py'...
+[12.762s] Compiling '/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/srv/_two_string_service.py'...
+[12.765s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.765s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.766s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.766s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.766s] -- Installing: /home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.767s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/local/lib/python3.10/dist-packages/my_custom_interface/my_custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.767s] -- Installing: /home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_generator_py.so
+[12.767s] -- Set non-toolchain portion of runtime path of "/home/harry/aaa/install/my_custom_interface/lib/libmy_custom_interface__rosidl_generator_py.so" to ""
+[12.767s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ABC.idl
+[12.768s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ROTATEHOME.idl
+[12.768s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/TwoStringService.idl
+[12.768s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/COMPLETE.idl
+[12.768s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/DRIVE.idl
+[12.768s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDER.idl
+[12.768s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDERR.idl
+[12.768s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/Calculator.idl
+[12.768s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/Cal.idl
+[12.769s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/COME.idl
+[12.769s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ABC.srv
+[12.769s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ABC_Request.msg
+[12.769s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ABC_Response.msg
+[12.769s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ROTATEHOME.srv
+[12.769s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ROTATEHOME_Request.msg
+[12.769s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ROTATEHOME_Response.msg
+[12.770s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/TwoStringService.srv
+[12.770s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/TwoStringService_Request.msg
+[12.770s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/TwoStringService_Response.msg
+[12.770s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/COMPLETE.srv
+[12.770s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/COMPLETE_Request.msg
+[12.770s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/COMPLETE_Response.msg
+[12.771s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/DRIVE.srv
+[12.771s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/DRIVE_Request.msg
+[12.771s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/DRIVE_Response.msg
+[12.771s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDER.srv
+[12.771s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDER_Request.msg
+[12.771s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDER_Response.msg
+[12.771s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDERR.srv
+[12.772s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDERR_Request.msg
+[12.772s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/srv/ORDERR_Response.msg
+[12.772s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/Calculator.action
+[12.772s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/Cal.action
+[12.772s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/action/COME.action
+[12.773s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/ament_index/resource_index/package_run_dependencies/my_custom_interface
+[12.773s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/ament_index/resource_index/parent_prefix_path/my_custom_interface
+[12.773s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/ament_prefix_path.sh
+[12.774s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/ament_prefix_path.dsv
+[12.774s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/path.sh
+[12.774s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/environment/path.dsv
+[12.774s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/local_setup.bash
+[12.774s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/local_setup.sh
+[12.775s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/local_setup.zsh
+[12.775s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/local_setup.dsv
+[12.775s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/package.dsv
+[12.775s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/ament_index/resource_index/packages/my_custom_interface
+[12.775s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_generator_cExport.cmake
+[12.775s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_generator_cExport-noconfig.cmake
+[12.775s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[12.776s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.776s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_introspection_cExport.cmake
+[12.776s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.776s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_cExport.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_cExport-noconfig.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_generator_cppExport.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_introspection_cppExport.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_cppExport.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_generator_pyExport.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/export_my_custom_interface__rosidl_generator_pyExport-noconfig.cmake
+[12.777s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/rosidl_cmake-extras.cmake
+[12.778s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.778s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.778s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[12.778s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/ament_cmake_export_targets-extras.cmake
+[12.778s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.778s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.779s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interfaceConfig.cmake
+[12.779s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/cmake/my_custom_interfaceConfig-version.cmake
+[12.779s] -- Installing: /home/harry/aaa/install/my_custom_interface/share/my_custom_interface/package.xml
+[12.781s] Invoked command in '/home/harry/aaa/build/my_custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/harry/a/install/term_project:/opt/ros/humble /home/harry/.local/bin/cmake --install /home/harry/aaa/build/my_custom_interface

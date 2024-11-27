@@ -1,0 +1,4 @@
+Invoking command in '/home/harry/aaa/build/my_custom_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /home/harry/.local/bin/cmake --build /home/harry/aaa/build/my_custom_interface -- -j12 -l12
+Invoked command in '/home/harry/aaa/build/my_custom_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/harry/.local/bin/cmake --build /home/harry/aaa/build/my_custom_interface -- -j12 -l12
+Invoking command in '/home/harry/aaa/build/my_custom_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /home/harry/.local/bin/cmake --install /home/harry/aaa/build/my_custom_interface
+Invoked command in '/home/harry/aaa/build/my_custom_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/harry/.local/bin/cmake --install /home/harry/aaa/build/my_custom_interface
