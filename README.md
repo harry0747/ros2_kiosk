@@ -1,7 +1,7 @@
 # ROS2 Kiosk
 
 ## 프로젝트: ROS2 기반 키오스크 주문 시스템
-/home/harry/aaa/src/kiosk/kiosk/kiosk.py -> 키오스크로 사용될 노드
+/home/harry/aaa/src/kiosk/kiosk/real_final.py -> 키오스크로 사용될 노드
 /home/harry/aaa/src/kiosk/kiosk/receive.py -> 자율주행로봇에 붙어서 수령확인할 노드
 ---
 
