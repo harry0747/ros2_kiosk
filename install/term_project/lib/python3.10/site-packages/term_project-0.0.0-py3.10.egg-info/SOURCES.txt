@@ -16,7 +16,6 @@ term_project/machine2.py
 term_project/machine3.py
 term_project/robot.py
 term_project/robot_sub.py
-term_project/test_machine3.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

@@ -237,11 +237,11 @@ inline const char * name<my_custom_interface::srv::ORDER_Response>()
 
 template<>
 struct has_fixed_size<my_custom_interface::srv::ORDER_Response>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<my_custom_interface::srv::ORDER_Response>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<my_custom_interface::srv::ORDER_Response>

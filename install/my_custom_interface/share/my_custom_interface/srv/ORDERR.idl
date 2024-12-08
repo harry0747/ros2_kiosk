@@ -16,6 +16,8 @@ module my_custom_interface {
       int8 strawberry;
 
       int8 table_number;
+
+      string wait;
     };
   };
 };

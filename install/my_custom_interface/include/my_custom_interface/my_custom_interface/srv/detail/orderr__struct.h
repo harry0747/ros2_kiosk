@@ -40,6 +40,11 @@ typedef struct my_custom_interface__srv__ORDERR_Request__Sequence
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'wait'
+// already included above
+// #include "rosidl_runtime_c/string.h"
+
 /// Struct defined in srv/ORDERR in the package my_custom_interface.
 typedef struct my_custom_interface__srv__ORDERR_Response
 {
@@ -47,6 +52,7 @@ typedef struct my_custom_interface__srv__ORDERR_Response
   int8_t mint;
   int8_t strawberry;
   int8_t table_number;
+  rosidl_runtime_c__String wait;
 } my_custom_interface__srv__ORDERR_Response;
 
 // Struct for a sequence of my_custom_interface__srv__ORDERR_Response.

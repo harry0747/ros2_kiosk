@@ -247,18 +247,18 @@ class ORDER_Response(metaclass=Metaclass_ORDER_Response):
     ]
 
     _fields_and_field_types = {
-        'answer': 'int8',
+        'answer': 'string',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int8'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.answer = kwargs.get('answer', int())
+        self.answer = kwargs.get('answer', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -307,10 +307,8 @@ class ORDER_Response(metaclass=Metaclass_ORDER_Response):
     def answer(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'answer' field must be of type 'int'"
-            assert value >= -128 and value < 128, \
-                "The 'answer' field must be an integer in [-128, 127]"
+                isinstance(value, str), \
+                "The 'answer' field must be of type 'str'"
         self._answer = value
 
 

@@ -121,37 +121,6 @@ class MainWindow(QMainWindow):
             self.info_window = InfoWindow(self.current_order, order_number, self)
             self.info_window.show()
 
-
-        
-
-# class ServingWindow(QMainWindow):
-#     def __init__(self, main_window):
-#         super().__init__()
-#         self.main_window = main_window  # MainWindow 참조 저장
-#         self.init_ui()
-
-#     def init_ui(self):
-#         self.serving_window = uic.loadUi(get_ui_path('serve.ui'), self)
-#         self.serving_window.show()
-
-#         self.serving_window.eat_here_Btn.setCursor(QCursor(Qt.PointingHandCursor))
-#         self.serving_window.takeout_Btn.setCursor(QCursor(Qt.PointingHandCursor))
-
-#         self.serving_window.eat_here_Btn.clicked.connect(self.go_table)
-#         self.serving_window.takeout_Btn.clicked.connect(self.go_flavor)
-
-#     def go_table(self):
-#         print("Eat here selected!")
-#         self.table_window = TableWindow(self.main_window)  # MainWindow 전달
-#         self.table_window.show()
-#         self.serving_window.hide()
-
-#     def go_flavor(self):
-#         print("Takeout selected!")
-        
-#         self.serving_window.hide()
-#         self.flavor_window.show()
-
 class TableWindow(QMainWindow):
     def __init__(self, main_window):
         super().__init__()

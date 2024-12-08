@@ -10,6 +10,7 @@
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/resource_topping_qrc.py
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/tcp.py
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/resource_table_qrc.py
+/home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/real_final.py
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/resource_pay_qrc.py
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/__pycache__/resource_qrc.cpython-310.pyc
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/__pycache__/receive.cpython-310.pyc
@@ -23,6 +24,7 @@
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/__pycache__/resource_topping_qrc.cpython-310.pyc
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/__pycache__/tcp.cpython-310.pyc
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/__pycache__/resource_table_qrc.cpython-310.pyc
+/home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/__pycache__/real_final.cpython-310.pyc
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk/__pycache__/resource_pay_qrc.cpython-310.pyc
 /home/harry/aaa/install/kiosk/share/ament_index/resource_index/packages/kiosk
 /home/harry/aaa/install/kiosk/share/kiosk/package.xml
@@ -79,4 +81,6 @@
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk-0.0.0-py3.10.egg-info/entry_points.txt
 /home/harry/aaa/install/kiosk/lib/python3.10/site-packages/kiosk-0.0.0-py3.10.egg-info/PKG-INFO
 /home/harry/aaa/install/kiosk/lib/kiosk/kiosk
+/home/harry/aaa/install/kiosk/lib/kiosk/real_fianl
 /home/harry/aaa/install/kiosk/lib/kiosk/receive
+/home/harry/aaa/install/kiosk/lib/kiosk/test2

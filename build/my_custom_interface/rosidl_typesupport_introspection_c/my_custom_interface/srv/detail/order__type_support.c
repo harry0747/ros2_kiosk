@@ -151,6 +151,10 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "my_custom_interface/srv/detail/order__struct.h"
 
 
+// Include directives for member types
+// Member `answer`
+#include "rosidl_runtime_c/string_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -173,7 +177,7 @@ void my_custom_interface__srv__ORDER_Response__rosidl_typesupport_introspection_
 static rosidl_typesupport_introspection_c__MessageMember my_custom_interface__srv__ORDER_Response__rosidl_typesupport_introspection_c__ORDER_Response_message_member_array[1] = {
   {
     "answer",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

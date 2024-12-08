@@ -206,6 +206,7 @@ CMakeFiles/my_custom_interface_uninstall.dir/clean:
 # Target rules for target CMakeFiles/my_custom_interface.dir
 
 # All Build rule for target.
+CMakeFiles/my_custom_interface.dir/all: CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/all
 CMakeFiles/my_custom_interface.dir/all: CMakeFiles/my_custom_interface__rosidl_generator_c.dir/all
 CMakeFiles/my_custom_interface.dir/all: CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/all
 CMakeFiles/my_custom_interface.dir/all: CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/all
@@ -213,7 +214,6 @@ CMakeFiles/my_custom_interface.dir/all: CMakeFiles/my_custom_interface__rosidl_t
 CMakeFiles/my_custom_interface.dir/all: CMakeFiles/my_custom_interface__cpp.dir/all
 CMakeFiles/my_custom_interface.dir/all: CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/all
 CMakeFiles/my_custom_interface.dir/all: CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/all
-CMakeFiles/my_custom_interface.dir/all: CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_custom_interface.dir/build.make CMakeFiles/my_custom_interface.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_custom_interface.dir/build.make CMakeFiles/my_custom_interface.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/harry/aaa/build/my_custom_interface/CMakeFiles --progress-num= "Built target my_custom_interface"
@@ -231,13 +231,13 @@ my_custom_interface: CMakeFiles/my_custom_interface.dir/rule
 .PHONY : my_custom_interface
 
 # codegen rule for target.
+CMakeFiles/my_custom_interface.dir/codegen: CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/all
 CMakeFiles/my_custom_interface.dir/codegen: CMakeFiles/my_custom_interface__rosidl_generator_c.dir/all
 CMakeFiles/my_custom_interface.dir/codegen: CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/all
 CMakeFiles/my_custom_interface.dir/codegen: CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/all
 CMakeFiles/my_custom_interface.dir/codegen: CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/all
 CMakeFiles/my_custom_interface.dir/codegen: CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_cpp.dir/all
 CMakeFiles/my_custom_interface.dir/codegen: CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_cpp.dir/all
-CMakeFiles/my_custom_interface.dir/codegen: CMakeFiles/my_custom_interface__rosidl_typesupport_cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_custom_interface.dir/build.make CMakeFiles/my_custom_interface.dir/codegen
 .PHONY : CMakeFiles/my_custom_interface.dir/codegen
 

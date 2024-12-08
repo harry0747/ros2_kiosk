@@ -58,4 +58,7 @@ CMakeFiles/my_custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_ty
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /home/harry/aaa/build/my_custom_interface/rosidl_generator_c/my_custom_interface/msg/rosidl_generator_c__visibility_control.h \
  /home/harry/aaa/build/my_custom_interface/rosidl_generator_c/my_custom_interface/srv/detail/order__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/service_introspection.h

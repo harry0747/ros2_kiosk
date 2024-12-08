@@ -39,10 +39,14 @@ typedef struct my_custom_interface__srv__ORDER_Request__Sequence
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'answer'
+#include "rosidl_runtime_c/string.h"
+
 /// Struct defined in srv/ORDER in the package my_custom_interface.
 typedef struct my_custom_interface__srv__ORDER_Response
 {
-  int8_t answer;
+  rosidl_runtime_c__String answer;
 } my_custom_interface__srv__ORDER_Response;
 
 // Struct for a sequence of my_custom_interface__srv__ORDER_Response.

@@ -25,6 +25,8 @@ CMakeFiles/my_custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/harry/aaa/build/my_custom_interface/rosidl_generator_c/my_custom_interface/srv/detail/order__type_support.h \
  /home/harry/aaa/build/my_custom_interface/rosidl_generator_c/my_custom_interface/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \

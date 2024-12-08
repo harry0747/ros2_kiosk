@@ -15,17 +15,38 @@ class Robot(Node):
     def __init__(self):
         super().__init__('robot')
         qos_profile = QoSProfile(depth = 10)
+        # 'finish'라는 서비스의 서버(robot -> kiosk_service) server_callback 콜백
         self.finish_server = self.create_service(COMPLETE,'finish',self.server_callback)
 
+        # 'restart'라는 서비스의 클라이언트(robot -> machine3)
+        self.restart_client = self.create_client(COMPLETE,'restart')
+
+        while not self.restart_client.wait_for_service(timeout_sec = 1.0):
+            self.get_logger().info('service not available, waiting again...')
+        self.req = COMPLETE.Request()
         
-    def server_callback(self,request,response): # request.a가 yes 면 thank you 출력/ 아니면 error 출력 이후 로봇 위치 다시 복귀
+    def server_callback(self,request,response):
+    # 'finish' 서비스의 서버 콜백 함수
+        # request 가 'yes'면 response에 'thank you!' 저장 아니면 'error' 저장
         if request.a == 'yes':
             response.good = 'thank you!'
+            
         else:
             response.good = 'error'
 
         self.get_logger().info(response.good)
+
+        # response에 'thank you!' 저장되어있으면 send_request 함수 실행
+        if response.good == 'thank you!':
+            self.send_request()
+            
         return response
+    
+    def send_request(self):
+    # 'restart'라는 서비스의 클라이언트로 서버에 요청보내는 함수
+    
+        self.req.a = 'finished!'
+        self.future = self.restart_client.call_async(self.req)
     
 def main(args=None):
     rclpy.init(args=args)

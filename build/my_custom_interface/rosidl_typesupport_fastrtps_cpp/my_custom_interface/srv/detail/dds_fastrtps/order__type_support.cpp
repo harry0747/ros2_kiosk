@@ -332,11 +332,9 @@ get_serialized_size(
   (void)wchar_size;
 
   // Member: answer
-  {
-    size_t item_size = sizeof(ros_message.answer);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.answer.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -365,8 +363,13 @@ max_serialized_size_ORDER_Response(
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
 
   size_t ret_val = current_alignment - initial_alignment;

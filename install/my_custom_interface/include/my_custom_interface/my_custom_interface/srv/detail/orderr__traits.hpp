@@ -142,6 +142,13 @@ inline void to_flow_style_yaml(
   {
     out << "table_number: ";
     rosidl_generator_traits::value_to_yaml(msg.table_number, out);
+    out << ", ";
+  }
+
+  // member: wait
+  {
+    out << "wait: ";
+    rosidl_generator_traits::value_to_yaml(msg.wait, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -187,6 +194,16 @@ inline void to_block_style_yaml(
     }
     out << "table_number: ";
     rosidl_generator_traits::value_to_yaml(msg.table_number, out);
+    out << "\n";
+  }
+
+  // member: wait
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "wait: ";
+    rosidl_generator_traits::value_to_yaml(msg.wait, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -237,11 +254,11 @@ inline const char * name<my_custom_interface::srv::ORDERR_Response>()
 
 template<>
 struct has_fixed_size<my_custom_interface::srv::ORDERR_Response>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<my_custom_interface::srv::ORDERR_Response>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<my_custom_interface::srv::ORDERR_Response>

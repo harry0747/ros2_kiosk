@@ -56,6 +56,7 @@ data/ui/topping.ui
 kiosk/__init__.py
 kiosk/final_kiosk.py
 kiosk/kioskGUI.py
+kiosk/real_final.py
 kiosk/receive.py
 kiosk/resource_order_qrc.py
 kiosk/resource_pay_qrc.py

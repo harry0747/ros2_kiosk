@@ -194,28 +194,28 @@ struct ORDER_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->answer = 0;
+      this->answer = "";
     }
   }
 
   explicit ORDER_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : answer(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->answer = 0;
+      this->answer = "";
     }
   }
 
   // field types and members
   using _answer_type =
-    int8_t;
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _answer_type answer;
 
   // setters for named parameter idiom
   Type & set__answer(
-    const int8_t & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
     this->answer = _arg;
     return *this;

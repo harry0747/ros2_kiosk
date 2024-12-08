@@ -250,6 +250,11 @@ my_custom_interface__srv__ORDERR_Request__Sequence__copy(
 }
 
 
+// Include directives for member types
+// Member `wait`
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
+
 bool
 my_custom_interface__srv__ORDERR_Response__init(my_custom_interface__srv__ORDERR_Response * msg)
 {
@@ -260,6 +265,11 @@ my_custom_interface__srv__ORDERR_Response__init(my_custom_interface__srv__ORDERR
   // mint
   // strawberry
   // table_number
+  // wait
+  if (!rosidl_runtime_c__String__init(&msg->wait)) {
+    my_custom_interface__srv__ORDERR_Response__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -273,6 +283,8 @@ my_custom_interface__srv__ORDERR_Response__fini(my_custom_interface__srv__ORDERR
   // mint
   // strawberry
   // table_number
+  // wait
+  rosidl_runtime_c__String__fini(&msg->wait);
 }
 
 bool
@@ -297,6 +309,12 @@ my_custom_interface__srv__ORDERR_Response__are_equal(const my_custom_interface__
   if (lhs->table_number != rhs->table_number) {
     return false;
   }
+  // wait
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->wait), &(rhs->wait)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -316,6 +334,12 @@ my_custom_interface__srv__ORDERR_Response__copy(
   output->strawberry = input->strawberry;
   // table_number
   output->table_number = input->table_number;
+  // wait
+  if (!rosidl_runtime_c__String__copy(
+      &(input->wait), &(output->wait)))
+  {
+    return false;
+  }
   return true;
 }
 

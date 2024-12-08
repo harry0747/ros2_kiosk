@@ -26,7 +26,8 @@ setup(
         	'robot_sub = term_project.robot_sub:main',
         	'machine2 = term_project.machine2:main',
         	'machine3 = term_project.machine3:main',
-        	'test = term_project.test_machine3:main'
+        	'machine_sub = term_project.machine_sub:main',
+        	'kiosk_service3 = term_project.kiosk_service3:main',
         ],
     },
 )

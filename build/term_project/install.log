@@ -1,6 +1,5 @@
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/machine2.py
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/__init__.py
-/home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/test_machine3.py
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/robot.py
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/kiosk_service.py
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/kiosk_action.py
@@ -8,7 +7,6 @@
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/machine3.py
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/__pycache__/machine2.cpython-310.pyc
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/__pycache__/__init__.cpython-310.pyc
-/home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/__pycache__/test_machine3.cpython-310.pyc
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/__pycache__/robot.cpython-310.pyc
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/__pycache__/kiosk_service.cpython-310.pyc
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project/__pycache__/kiosk_action.cpython-310.pyc
@@ -25,8 +23,9 @@
 /home/harry/aaa/install/term_project/lib/python3.10/site-packages/term_project-0.0.0-py3.10.egg-info/PKG-INFO
 /home/harry/aaa/install/term_project/lib/term_project/kiosk_action
 /home/harry/aaa/install/term_project/lib/term_project/kiosk_service
+/home/harry/aaa/install/term_project/lib/term_project/kiosk_service3
 /home/harry/aaa/install/term_project/lib/term_project/machine2
 /home/harry/aaa/install/term_project/lib/term_project/machine3
+/home/harry/aaa/install/term_project/lib/term_project/machine_sub
 /home/harry/aaa/install/term_project/lib/term_project/robot
 /home/harry/aaa/install/term_project/lib/term_project/robot_sub
-/home/harry/aaa/install/term_project/lib/term_project/test

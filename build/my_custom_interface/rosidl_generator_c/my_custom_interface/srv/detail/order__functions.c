@@ -259,6 +259,10 @@ my_custom_interface__srv__ORDER_Request__Sequence__copy(
 }
 
 
+// Include directives for member types
+// Member `answer`
+#include "rosidl_runtime_c/string_functions.h"
+
 bool
 my_custom_interface__srv__ORDER_Response__init(my_custom_interface__srv__ORDER_Response * msg)
 {
@@ -266,6 +270,10 @@ my_custom_interface__srv__ORDER_Response__init(my_custom_interface__srv__ORDER_R
     return false;
   }
   // answer
+  if (!rosidl_runtime_c__String__init(&msg->answer)) {
+    my_custom_interface__srv__ORDER_Response__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -276,6 +284,7 @@ my_custom_interface__srv__ORDER_Response__fini(my_custom_interface__srv__ORDER_R
     return;
   }
   // answer
+  rosidl_runtime_c__String__fini(&msg->answer);
 }
 
 bool
@@ -285,7 +294,9 @@ my_custom_interface__srv__ORDER_Response__are_equal(const my_custom_interface__s
     return false;
   }
   // answer
-  if (lhs->answer != rhs->answer) {
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->answer), &(rhs->answer)))
+  {
     return false;
   }
   return true;
@@ -300,7 +311,11 @@ my_custom_interface__srv__ORDER_Response__copy(
     return false;
   }
   // answer
-  output->answer = input->answer;
+  if (!rosidl_runtime_c__String__copy(
+      &(input->answer), &(output->answer)))
+  {
+    return false;
+  }
   return true;
 }
 

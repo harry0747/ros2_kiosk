@@ -1,2 +1,2 @@
 
-int8 answer
+string answer

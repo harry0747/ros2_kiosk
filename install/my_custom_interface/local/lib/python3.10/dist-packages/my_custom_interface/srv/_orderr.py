@@ -182,6 +182,7 @@ class ORDERR_Response(metaclass=Metaclass_ORDERR_Response):
         '_mint',
         '_strawberry',
         '_table_number',
+        '_wait',
     ]
 
     _fields_and_field_types = {
@@ -189,6 +190,7 @@ class ORDERR_Response(metaclass=Metaclass_ORDERR_Response):
         'mint': 'int8',
         'strawberry': 'int8',
         'table_number': 'int8',
+        'wait': 'string',
     }
 
     SLOT_TYPES = (
@@ -196,6 +198,7 @@ class ORDERR_Response(metaclass=Metaclass_ORDERR_Response):
         rosidl_parser.definition.BasicType('int8'),  # noqa: E501
         rosidl_parser.definition.BasicType('int8'),  # noqa: E501
         rosidl_parser.definition.BasicType('int8'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -206,6 +209,7 @@ class ORDERR_Response(metaclass=Metaclass_ORDERR_Response):
         self.mint = kwargs.get('mint', int())
         self.strawberry = kwargs.get('strawberry', int())
         self.table_number = kwargs.get('table_number', int())
+        self.wait = kwargs.get('wait', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -243,6 +247,8 @@ class ORDERR_Response(metaclass=Metaclass_ORDERR_Response):
         if self.strawberry != other.strawberry:
             return False
         if self.table_number != other.table_number:
+            return False
+        if self.wait != other.wait:
             return False
         return True
 
@@ -310,6 +316,19 @@ class ORDERR_Response(metaclass=Metaclass_ORDERR_Response):
             assert value >= -128 and value < 128, \
                 "The 'table_number' field must be an integer in [-128, 127]"
         self._table_number = value
+
+    @builtins.property
+    def wait(self):
+        """Message field 'wait'."""
+        return self._wait
+
+    @wait.setter
+    def wait(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'wait' field must be of type 'str'"
+        self._wait = value
 
 
 class Metaclass_ORDERR(type):

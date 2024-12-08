@@ -63,16 +63,32 @@ namespace srv
 namespace builder
 {
 
+class Init_ORDERR_Response_wait
+{
+public:
+  explicit Init_ORDERR_Response_wait(::my_custom_interface::srv::ORDERR_Response & msg)
+  : msg_(msg)
+  {}
+  ::my_custom_interface::srv::ORDERR_Response wait(::my_custom_interface::srv::ORDERR_Response::_wait_type arg)
+  {
+    msg_.wait = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::my_custom_interface::srv::ORDERR_Response msg_;
+};
+
 class Init_ORDERR_Response_table_number
 {
 public:
   explicit Init_ORDERR_Response_table_number(::my_custom_interface::srv::ORDERR_Response & msg)
   : msg_(msg)
   {}
-  ::my_custom_interface::srv::ORDERR_Response table_number(::my_custom_interface::srv::ORDERR_Response::_table_number_type arg)
+  Init_ORDERR_Response_wait table_number(::my_custom_interface::srv::ORDERR_Response::_table_number_type arg)
   {
     msg_.table_number = std::move(arg);
-    return std::move(msg_);
+    return Init_ORDERR_Response_wait(msg_);
   }
 
 private:

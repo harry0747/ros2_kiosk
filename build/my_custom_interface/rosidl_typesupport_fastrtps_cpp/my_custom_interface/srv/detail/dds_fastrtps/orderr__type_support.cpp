@@ -255,6 +255,8 @@ cdr_serialize(
   cdr << ros_message.strawberry;
   // Member: table_number
   cdr << ros_message.table_number;
+  // Member: wait
+  cdr << ros_message.wait;
   return true;
 }
 
@@ -275,6 +277,9 @@ cdr_deserialize(
 
   // Member: table_number
   cdr >> ros_message.table_number;
+
+  // Member: wait
+  cdr >> ros_message.wait;
 
   return true;
 }
@@ -316,6 +321,10 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: wait
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.wait.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -372,6 +381,19 @@ max_serialized_size_ORDERR_Response(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Member: wait
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -380,7 +402,7 @@ max_serialized_size_ORDERR_Response(
     using DataType = my_custom_interface::srv::ORDERR_Response;
     is_plain =
       (
-      offsetof(DataType, table_number) +
+      offsetof(DataType, wait) +
       last_member_size
       ) == ret_val;
   }

@@ -156,12 +156,13 @@ struct ORDERR_Response_
       this->mint = 0;
       this->strawberry = 0;
       this->table_number = 0;
+      this->wait = "";
     }
   }
 
   explicit ORDERR_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : wait(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
@@ -169,6 +170,7 @@ struct ORDERR_Response_
       this->mint = 0;
       this->strawberry = 0;
       this->table_number = 0;
+      this->wait = "";
     }
   }
 
@@ -185,6 +187,9 @@ struct ORDERR_Response_
   using _table_number_type =
     int8_t;
   _table_number_type table_number;
+  using _wait_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _wait_type wait;
 
   // setters for named parameter idiom
   Type & set__chocolate(
@@ -209,6 +214,12 @@ struct ORDERR_Response_
     const int8_t & _arg)
   {
     this->table_number = _arg;
+    return *this;
+  }
+  Type & set__wait(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->wait = _arg;
     return *this;
   }
 
@@ -264,6 +275,9 @@ struct ORDERR_Response_
       return false;
     }
     if (this->table_number != other.table_number) {
+      return false;
+    }
+    if (this->wait != other.wait) {
       return false;
     }
     return true;

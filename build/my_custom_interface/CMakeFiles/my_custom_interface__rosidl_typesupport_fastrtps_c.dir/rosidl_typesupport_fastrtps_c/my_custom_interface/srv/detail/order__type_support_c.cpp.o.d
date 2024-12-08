@@ -184,9 +184,11 @@ CMakeFiles/my_custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesup
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/malloc.h \
  /home/harry/aaa/build/my_custom_interface/rosidl_generator_c/my_custom_interface/srv/detail/order__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /home/harry/aaa/build/my_custom_interface/rosidl_generator_c/my_custom_interface/srv/detail/order__functions.h \
  /usr/include/c++/11/stdlib.h \
  /home/harry/aaa/build/my_custom_interface/rosidl_generator_c/my_custom_interface/msg/rosidl_generator_c__visibility_control.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
  /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp/service_type_support.h \
  /opt/ros/humble/include/rmw/rmw/types.h \
  /opt/ros/humble/include/rcutils/rcutils/logging.h \

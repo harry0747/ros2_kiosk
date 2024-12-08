@@ -20,6 +20,8 @@ import json
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+from my_custom_interface.srv import ORDER
+
 
 # 환경 변수 로드
 load_dotenv()
@@ -29,17 +31,34 @@ def get_ui_path(relative_path):
     base_dir = get_package_share_directory('kiosk')  # 'kiosk'는 패키지 이름
     return os.path.join(base_dir, 'data/ui', relative_path)
 
-class ROS2Publisher(Node):
+class ROS2Client(Node):
     def __init__(self):
-        super().__init__('kiosk_publisher')
-        self.publisher = self.create_publisher(String, 'kiosk_order', 10)  # 'kiosk_order'라는 토픽 생성
+        super().__init__('kiosk_client')
+        self.client = self.create_client(ORDER, 'order_service')  # 서비스 이름은 'order_service'
 
-    def publish_order(self, order_data):
-        msg = String()
-        msg.data = order_data  # 데이터를 문자열로 변환
-        self.publisher.publish(msg)
-        self.get_logger().info(f'Published Order: {order_data}')
+        while not self.client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('Waiting for ORDER service...')
 
+    def send_order(self, table, flavors):
+        req = ORDER.Request()
+        req.table_number = table
+        req.chocolate = flavors.get('choco', 0)
+        req.mint = flavors.get('mint', 0)
+        req.strawberry = flavors.get('strawberry', 0)
+
+        # 서비스 요청 보내기
+        future = self.client.call_async(req)
+        rclpy.spin_until_future_complete(self, future)
+
+        if future.result() is not None:
+            response = future.result()
+            self.get_logger().info(f"Order ID: {response.answer}")
+            return response.answer  # 응답 받은 주문 번호 반환
+        else:
+            self.get_logger().error('Failed to send order')
+            return None
+
+        
 class Order():
     def __init__(self):
         self.icecream = None
@@ -48,10 +67,9 @@ class Order():
         self.flavors = {}
 
 class MainWindow(QMainWindow):
-    def __init__(self, ros_publisher):
+    def __init__(self, ros_client):
         super().__init__()
-        self.ros_publisher = ros_publisher  # ROS2Publisher 인스턴스 저장
-        self.publish_timer = None  # 퍼블리싱 타이머 초기화
+        self.ros_client = ros_client  # ROS2Client 인스턴스 저장
         self.current_order = None  # 현재 주문 데이터 초기화
         self.init_ui()  # UI 초기화
 
@@ -71,40 +89,25 @@ class MainWindow(QMainWindow):
         self.serving_window.show()
         self.main_window.hide()
 
+    def start_order(self, table, flavors):
+        """주문 시작: ROS2 클라이언트를 통해 주문 처리"""
+        # 서비스 클라이언트를 통해 주문 전송 후 응답 받기
+        order_id = self.ros_client.send_order(table, flavors)
+        
+        if order_id:
+            # 응답 받은 주문 번호를 InfoWindow에 전달
+            self.info_window = InfoWindow(self.current_order, self, order_id)
+            self.info_window.show()
+            self.close()
+
     def restart(self):
         """메인 윈도우로 돌아가기"""
         print("Returning to Main Window")
         self.main_window.show()
 
-    def start_publishing(self, table, flavors):
-        """ROS2 퍼블리싱 시작"""
-        self.stop_publishing()  # 기존 퍼블리싱 타이머 중지
-        self.current_order = {"table": table, "flavors": flavors}
-
-        # 타이머 설정 (1초 간격으로 퍼블리싱)
-        self.publish_timer = QTimer(self)
-        self.publish_timer.timeout.connect(self._publish_current_order)
-        self.publish_timer.start(1000)  # 1000ms (1초)
-
-    def stop_publishing(self):
-        """ROS2 퍼블리싱 중지"""
-        if self.publish_timer:
-            self.publish_timer.stop()
-            self.publish_timer = None
-            print("Stopped Publishing")
-
-    def _publish_current_order(self):
-        """현재 주문을 ROS2로 퍼블리시"""
-        if self.current_order:
-            order_data_json = json.dumps(self.current_order)
-            self.ros_publisher.publish_order(order_data_json)
-
     def closeEvent(self, event):
         """창을 닫을 때 ROS2 노드 종료"""
-        self.stop_publishing()
-        self.ros_publisher.destroy_node()
         rclpy.shutdown()
-
 
 
 
@@ -207,19 +210,17 @@ class FlavorWindow(QMainWindow):
     def go_info(self):
         """ROS2 Publish 및 InfoWindow로 이동"""
         # SpinBox 값을 주문 정보에 저장
-        self.order.flavors = {
-            'choco': self.choco_spinbox.value(),
-            'mint': self.mint_spinbox.value(),
-            'strawberry': self.strawberry_spinbox.value()
-        }
+        self.choco = self.choco_spinbox.value()
+        self.mint = self.mint_spinbox.value()
+        self.strawberry = self.strawberry_spinbox.value()
 
-        print(f"Publishing Order: Table {self.order.table}, Flavors {self.order.flavors}")
+        print(f"Publishing Order: Table {self.order.table}, Flavors {self.choco}, {self.mint}, {self.strawberry}")
 
-        # ROS2 Publish 호출
-        if self.main_window and hasattr(self.main_window, 'start_publishing'):
-            self.main_window.start_publishing(
+        # ROS2 클라이언트를 통해 주문 정보를 서버로 전송
+        if self.main_window:
+            self.main_window.start_order(
                 table=self.order.table,
-                flavors=self.order.flavors
+                flavors={'choco': self.choco, 'mint': self.mint, 'strawberry': self.strawberry}
             )
 
         # InfoWindow로 이동
@@ -228,41 +229,30 @@ class FlavorWindow(QMainWindow):
         self.close()
 
 
+
 class InfoWindow(QMainWindow):
-    def __init__(self, order, main_window):
+    def __init__(self, order, main_window, order_id):
         super().__init__()
         self.order = order
         self.main_window = main_window
-        self.step = 0
+        self.order_id = order_id  # 주문 번호를 받음
         self.init_ui()
 
     def init_ui(self):
         self.info_window = uic.loadUi(get_ui_path('info.ui'), self)
 
+        # 주문 번호를 화면에 표시
+        self.info_window.orderNumber.setText(f"Order ID: {self.order_id}")  # QLabel에 주문 번호 표시
+
         flavors_summary = "\n".join(
             [f"{flavor.capitalize()}: {quantity}" for flavor, quantity in self.order.flavors.items()]
         )
         self.info_window.flavor.setText(f"Selected Flavors:\n{flavors_summary}")
-
-        self.info_window.bar.setValue(0)
-        self.timer = QBasicTimer()
-        self.timer.start(100, self)
-
-    def timerEvent(self, e):
-        if self.step >= 100:
-            self.timer.stop()
-            print("Progress complete! Returning to Main Window.")
-
-            # 퍼블리시 중지
-            if self.main_window and hasattr(self.main_window, 'stop_publishing'):
-                self.main_window.stop_publishing()
-
-            self.main_window.restart()
-            self.close()
-            return
-
-        self.step += 1
-        self.info_window.bar.setValue(self.step)
+    
+    def closeEvent(self, event):
+        """창을 닫을 때 MainWindow로 돌아가기"""
+        self.main_window.restart()
+        self.close()
 
 def main():
     # PyQt5 애플리케이션 초기화
@@ -270,10 +260,10 @@ def main():
 
     # ROS2 노드 초기화
     rclpy.init()  # 프로그램 전체에서 한 번만 호출
-    ros_publisher = ROS2Publisher()  # ROS2Publisher 노드 생성
+    ros_client = ROS2Client()  # ROS2Client 노드 생성
 
     # MainWindow 생성
-    main_window = MainWindow(ros_publisher)  # ROS2Publisher 전달
+    main_window = MainWindow(ros_client)  # ROS2Client 전달
     main_window.show()
 
     # 이벤트 루프 실행
@@ -283,10 +273,13 @@ def main():
         print(f"Application error: {e}")
     finally:
         # 프로그램 종료 시 ROS2 노드 및 컨텍스트 정리
-        ros_publisher.destroy_node()
+        ros_client.destroy_node()  # ROS2Client 종료
         rclpy.shutdown()
+
 
 
 
 if __name__ == "__main__":
     main()
+
+# 프로그래스 바없애기 

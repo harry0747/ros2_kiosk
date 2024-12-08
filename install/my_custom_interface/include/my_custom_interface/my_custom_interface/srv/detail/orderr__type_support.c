@@ -104,6 +104,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "my_custom_interface/srv/detail/orderr__struct.h"
 
 
+// Include directives for member types
+// Member `wait`
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -123,7 +128,7 @@ void my_custom_interface__srv__ORDERR_Response__rosidl_typesupport_introspection
   my_custom_interface__srv__ORDERR_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember my_custom_interface__srv__ORDERR_Response__rosidl_typesupport_introspection_c__ORDERR_Response_message_member_array[4] = {
+static rosidl_typesupport_introspection_c__MessageMember my_custom_interface__srv__ORDERR_Response__rosidl_typesupport_introspection_c__ORDERR_Response_message_member_array[5] = {
   {
     "chocolate",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
@@ -191,13 +196,30 @@ static rosidl_typesupport_introspection_c__MessageMember my_custom_interface__sr
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "wait",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_custom_interface__srv__ORDERR_Response, wait),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers my_custom_interface__srv__ORDERR_Response__rosidl_typesupport_introspection_c__ORDERR_Response_message_members = {
   "my_custom_interface__srv",  // message namespace
   "ORDERR_Response",  // message name
-  4,  // number of fields
+  5,  // number of fields
   sizeof(my_custom_interface__srv__ORDERR_Response),
   my_custom_interface__srv__ORDERR_Response__rosidl_typesupport_introspection_c__ORDERR_Response_message_member_array,  // message members
   my_custom_interface__srv__ORDERR_Response__rosidl_typesupport_introspection_c__ORDERR_Response_init_function,  // function to initialize message memory (memory has to be allocated)

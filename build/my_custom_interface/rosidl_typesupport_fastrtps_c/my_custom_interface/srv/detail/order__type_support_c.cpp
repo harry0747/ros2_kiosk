@@ -296,6 +296,8 @@ extern "C"
 {
 #endif
 
+#include "rosidl_runtime_c/string.h"  // answer
+#include "rosidl_runtime_c/string_functions.h"  // answer
 
 // forward declare type support functions
 
@@ -313,7 +315,16 @@ static bool _ORDER_Response__cdr_serialize(
   const _ORDER_Response__ros_msg_type * ros_message = static_cast<const _ORDER_Response__ros_msg_type *>(untyped_ros_message);
   // Field name: answer
   {
-    cdr << ros_message->answer;
+    const rosidl_runtime_c__String * str = &ros_message->answer;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
   }
 
   return true;
@@ -330,7 +341,18 @@ static bool _ORDER_Response__cdr_deserialize(
   _ORDER_Response__ros_msg_type * ros_message = static_cast<_ORDER_Response__ros_msg_type *>(untyped_ros_message);
   // Field name: answer
   {
-    cdr >> ros_message->answer;
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->answer.data) {
+      rosidl_runtime_c__String__init(&ros_message->answer);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->answer,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'answer'\n");
+      return false;
+    }
   }
 
   return true;
@@ -351,11 +373,9 @@ size_t get_serialized_size_my_custom_interface__srv__ORDER_Response(
   (void)wchar_size;
 
   // field.name answer
-  {
-    size_t item_size = sizeof(ros_message->answer);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->answer.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -389,8 +409,13 @@ size_t max_serialized_size_my_custom_interface__srv__ORDER_Response(
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
 
   size_t ret_val = current_alignment - initial_alignment;

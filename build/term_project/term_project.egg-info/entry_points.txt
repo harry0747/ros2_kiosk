@@ -1,9 +1,10 @@
 [console_scripts]
 kiosk_action = term_project.kiosk_action:main
 kiosk_service = term_project.kiosk_service:main
+kiosk_service3 = term_project.kiosk_service3:main
 machine2 = term_project.machine2:main
 machine3 = term_project.machine3:main
+machine_sub = term_project.machine_sub:main
 robot = term_project.robot:main
 robot_sub = term_project.robot_sub:main
-test = term_project.test_machine3:main
 

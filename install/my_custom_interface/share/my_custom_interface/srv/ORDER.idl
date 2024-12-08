@@ -15,7 +15,7 @@ module my_custom_interface {
       int8 table_number;
     };
     struct ORDER_Response {
-      int8 answer;
+      string answer;
     };
   };
 };

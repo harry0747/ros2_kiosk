@@ -76,7 +76,9 @@ setup(
         'console_scripts': [
 
             'kiosk = kiosk.final_kiosk:main',
-            'receive = kiosk.receive:main'
+            'receive = kiosk.receive:main',
+            'test2 = kiosk.test2:main',
+            'real_fianl = kiosk.real_final:main'
  
         ],
     },
